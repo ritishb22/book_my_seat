@@ -93,11 +93,45 @@ public class book_my_seat
         System.out.println(desx+ " Enjoy watching " +name+ " in " +CITY);
         String[] Mumbai_Theaters ={"Maratha Mandir Theatre","Carnival Cinemas Liberty","Regal Cinema","Eros Cinema","Prithvi Theatre"};
         String[] Thiruvananthapuram_Theaters ={"Aries Plex SL Cinemas","Carnival Cinemas(Mall of Travancore)","PVR Kripa","Carnival Cinemas","Kairali Theatre"};
-        String[] Chennai_Theaters ={"Cinepolis Multiplex","Gold Cinemas","PVR: Soul Spirit","Rockline Cinemas","Innovative Multiplex"};
+        String[] Delhi_Theaters ={"PVR Anupam (Saket)","INOX Cinema","PVR Cinemas (Pacific Mall)","PVR Cinemas (East Delhi Mall)","PVR Cinemas (Mahagun Metro Mall)"};
+        String[] Kolkata_Theaters ={"PVR Cinemas (Diamond Plaza)","Nandan Cinema Hall","INOX Cinemas (South City Mall)","INOX Cinemas","Navina Cinema"};
+        String[] Chennai_Theaters ={"AGS Cinemas","Jazz Cinemas LUXE","Sathyam Cinemas","Janatha Theatre","Jothi Theatre"};
+        String[] Bangalore_Theaters ={"PVR Cinemas (Orient Mall)","PVR Cinemas (Nexus Mall)","Innovative Multiplex","Urvashi Theatre","INOX Cinemas"};
+        String[] Hyderabad_Theaters ={"Prasads","AMB Cinemas","PVR Forum Sujana Mall","PVR Cinemas","RK Cineplex"};
+        String[] Ahmedabad_Theaters ={"PVR Cinemas (Acropolis Mall)","City Gold Cinemas","Shree Balaji Multiplex (Shree Balaji Agora Mall))","Wide Angle Multiplex","Cinepolis Nexus (Ahmedabad One)"};
+        String[] Pune_Theaters ={"E Square Multiplex","Mangala Multiplex","City Pride Multiplex","Rahul Talkies","PVR Cinemas Viman Nagar"};
+        String[] Surat_Theaters ={"Triveni Cinema","PVR Cinemas (Rahul Raj Mall)","INOX Cinemas (VR Surat)","Cinepolis Cinemas (Imperial Square Mall)","Rajhans Multiplex"};
+        String[] Jaipur_Theaters ={"Raj Mandir Cinema","Cinepolis Cinemas","Carnival Cinemas","INOX Cinemas (Sunny Trade Center)","First Cinema"};
+        String[] Kanpur_Theaters ={"INOX Cinemas (Z Square Mall)","Miraj Cinemas","Carnival Cinemas (Rave Moti Mall)","Carnival Cinemas (Rave 3 Mall)","Carnival Cinemas"};
+        String[] Lucknow_Theaters ={"Cinepolis Cinemas (One Awadh Center)","Fun Cinemas","PVR Cinemas (Singapore Mall)","PVR Cinemas (Sahara Ganj Mall)","Novelty Cinema"};
+        String[] Nagur_Theaters ={"PVR Cinemas (Empress Mall)","INOX Cinema (Jaswant Tuli Mall)","Carnival Cinemas","Moviemax Cinemas (Eternity Mall)","Cinemax Cinemas (Eternity Mall)"};
+        String[] Indore_Theaters ={"INOX Cinemas (Sapna Sangeet Mall)","PVR Cinemas (Treasure Island)","Carnival Cinemas (Mangal City Mall)","Carnival Cinemas (Malhar Mega Mall)","INOX Cinemas (C 21 Mall)"};
+        String[] Patna_Theaters ={"Krishna Talkies","Prem Chand Rangshaala","Regent Fun Cinemas","Mona 70 Mm","The Premiere Square"};
+        String[] Bhopal_Theaters ={"Jyoti Cineplex","Cinepolis Cinema (Aashima The Lake City Mall)","Inox Cinemas (Capital Mall)","Rang Mahal Cinema","DDX Cinema"};
+        String[] Thane_Theaters ={"Cinepolis Cinema (Vivana Mall)","Cinepolis Cinema Vip (Vivana Mall)","Moviemax Cinemas (Wonder Mall)","INOX Cinemas (Korum Mall)","Moviemax Cinemas (Eternity Mall)"};
+        String[] Vadodara_Theaters ={"INOX Cinemas","PVR Cinemas","Cinemarc Vihar Cinemas (Pacific Mall)","Cinepolis Cinemas (Inorbit Mall)","Cinemarc Cinemas (Galleria Mall)"};
+        String[] Visakhapatnam_Theaters ={"INOX Chitralaya Mall","INOX","INOC Cmr Central Mall","Melody Cinema Hall","Mukta A2 Cinemas Vizag Central Mall"};
         switch (ci) {
             case 1 -> Theaters = Mumbai_Theaters;
             case 2 -> Theaters = Thiruvananthapuram_Theaters;
-            case 3 -> Theaters = Chennai_Theaters;
+            case 3 -> Theaters = Delhi_Theaters;
+            case 4 -> Theaters = Kolkata_Theaters;
+            case 5 -> Theaters = Chennai_Theaters;
+            case 6 -> Theaters = Bangalore_Theaters;
+            case 7 -> Theaters = Hyderabad_Theaters;
+            case 8 -> Theaters = Ahmedabad_Theaters;
+            case 9 -> Theaters = Pune_Theaters;
+            case 10 -> Theaters = Surat_Theaters;
+            case 11 -> Theaters = Jaipur_Theaters;
+            case 12 -> Theaters = Kanpur_Theaters;
+            case 13 -> Theaters = Lucknow_Theaters;
+            case 14 -> Theaters = Nagur_Theaters;
+            case 15 -> Theaters = Indore_Theaters;
+            case 16 -> Theaters = Patna_Theaters;
+            case 17 -> Theaters = Bhopal_Theaters;
+            case 18 -> Theaters = Thane_Theaters;
+            case 19 -> Theaters = Vadodara_Theaters;
+            case 20 -> Theaters = Visakhapatnam_Theaters;
         }
     }
     public void English ()throws IOException {
