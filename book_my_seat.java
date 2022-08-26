@@ -2,6 +2,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Calendar;
+import java.util.Scanner;
+
 @SuppressWarnings({"CStyleArrayDeclaration", "SwitchStatementWithTooFewBranches", "EnhancedSwitchMigration"})
 public class book_my_seat
 {
@@ -12,13 +14,12 @@ public class book_my_seat
     public static final String TEXT_RED = "\u001B[31m";
 
     BufferedReader en = new BufferedReader(new InputStreamReader(System.in));
-    double total, amt, Amt, gst, AMT;
-    int qty, sna, samt, sqty, stotal, pay;
-    String loop, tre, description, name, snam, snak, snc;
+    double total = 0, amt = 0, Amt = 0, gst, AMT = 0;
+    int qty = 0, sna = 0, samt = 0, sqty = 0, stotal = 0, pay = 0;
+    String loop, tre, description, name, snam, snak, snc, CITY;
     double tt = Math.round(Math.random()*100);
     double[] Cost = {249+tt, 397+tt, 500+tt,325+tt,344+tt};
-    String[] Theaters ={"Cinepolis Multiplex","Gold Cinemas","PVR: Soul Spirit","Rockline Cinemas","Innovative Multiplex"};
-    String[] Type = {"            2D                  ","                   3D                  ","               IMax                ","               Drive-In            ","           Multiplex           "};
+    String[] Theaters;
     static int T=1;
     public static void main (String args[]) throws IOException {
         String again;
@@ -71,10 +72,33 @@ public class book_my_seat
             default:
                 throw new IllegalStateException("Unexpected value: " + l);
         }
+        obj.City();
         obj.Tre$Snacks();
         obj.Billing();
         obj.Payments();
         obj.Thanking();
+    }
+    public void City (){
+        System.out.println("Select city:");
+        String[] City = {"Mumbai", "Thiruvananthapuram", "Delhi", "Kolkata", "Chennai", "Bangalore", "Hyderabad", "Ahmedabad", "Pune", "Surat", "Jaipur", "Kanpur", "Lucknow", "Nagpur", "Indore", "Patna", "Bhopal", "Thane", "Vadodara", "Visakhapatnam"};
+        int city;
+        for (city = 0; city< City.length; city++){
+            System.out.printf("%2d. %1s%n", city+1, City[city]);
+        }
+        Scanner cit = new Scanner(System.in);
+        int ci = cit.nextInt();
+        CITY = City[ci-1];
+        String[] city_description = {"Mumbai is the centre of the Mumbai Metropolitan Region, the sixth most populous metropolitan area in the world with a population of over 2.3 crore (23 million).", "Thiruvananthapuram (or Trivandrum) is the capital of the southern Indian state of Kerala. It's distinguished by its British colonial architecture and many art galleries. It’s also home to Kuthira Malika (or Puthen Malika) Palace, adorned with carved horses and displaying collections related to the Travancore royal family, whose regional capital was here from the 18th–20th centuries.", "Delhi, India’s capital territory, is a massive metropolitan area in the country’s north. In Old Delhi, a neighborhood dating to the 1600s, stands the imposing Mughal-era Red Fort, a symbol of India, and the sprawling Jama Masjid mosque, whose courtyard accommodates 25,000 people. Nearby is Chandni Chowk, a vibrant bazaar filled with food carts, sweets shops and spice stalls.", "Kolkata (formerly Calcutta) is the capital of India's West Bengal state. Founded as an East India Company trading post, it was India's capital under the British Raj from 1773–1911. Today it’s known for its grand colonial architecture, art galleries and cultural festivals. It’s also home to Mother House, headquarters of the Missionaries of Charity, founded by Mother Teresa, whose tomb is on site.", "Chennai, on the Bay of Bengal in eastern India, is the capital of the state of Tamil Nadu. The city is home to Fort St. George, built in 1644 and now a museum showcasing the city’s roots as a British military garrison and East India Company trading outpost, when it was called Madras. Religious sites include Kapaleeshwarar Temple, adorned with carved and painted gods, and St. Mary’s, a 17th-century Anglican church.", "Bengaluru (also called Bangalore) is the capital of India's southern Karnataka state. The center of India's high-tech industry, the city is also known for its parks and nightlife. By Cubbon Park, Vidhana Soudha is a Neo-Dravidian legislative building. Former royal residences include 19th-century Bangalore Palace, modeled after England’s Windsor Castle, and Tipu Sultan’s Summer Palace, an 18th-century teak structure.", "Hyderabad is the capital of southern India's Telangana state. A major center for the technology industry, it's home to many upscale restaurants and shops. Its historic sites include Golconda Fort, a former diamond-trading center that was once the Qutb Shahi dynastic capital. The Charminar, a 16th-century mosque whose 4 arches support towering minarets, is an old city landmark near the long-standing Laad Bazaar.", "Ahmedabad, in western India, is the largest city in the state of Gujarat. The Sabarmati River runs through its center. On the western bank is the Gandhi Ashram at Sabarmati, which displays the spiritual leader’s living quarters and artifacts. Across the river, the Calico Museum of Textiles, once a cloth merchant's mansion, has a significant collection of antique and modern fabrics.", "Pune is a sprawling city in the western Indian state of Maharashtra. It was once the base of the Peshwas (prime ministers) of the Maratha Empire, which lasted from 1674 to 1818. It's known for the grand Aga Khan Palace, built in 1892 and now a memorial to Mahatma Gandhi, whose ashes are preserved in the garden. The 8th-century Pataleshwar Cave Temple is dedicated to the Hindu god Shiva.", "Surat is a large city beside the Tapi River in the west Indian state of Gujarat. Once known for silk weaving, Surat remains a commercial center for textiles, and the New Textile Market area is lined with fabric shops. Overlooking the river, Surat Castle was built in the 1500s to defend the city against Portuguese colonists. Nearby, the Dutch, Armenian and English cemeteries contain elaborate colonial-era tombs.", "Jaipur is the capital of India’s Rajasthan state. It evokes the royal family that once ruled the region and that, in 1727, founded what is now called the Old City, or “Pink City” for its trademark building color. At the center of its stately street grid (notable in India) stands the opulent, colonnaded City Palace complex. With gardens, courtyards and museums, part of it is still a royal residence", "Kanpur or Cawnpore is an industrial city in the central-western part of the state of Uttar Pradesh, India. Founded in 1803, Kanpur became one of the most important commercial and military stations of British India. Kanpur is also the financial capital of Uttar Pradesh.", "Lucknow, a large city in northern India, is the capital of the state of Uttar Pradesh. Toward its center is Rumi Darwaza, a Mughal gateway. Nearby, the 18th-century Bara Imambara shrine has a huge arched hall. Upstairs, Bhool Bhulaiya is a maze of narrow tunnels with city views from its upper balconies. Close by, the grand Victorian Husainabad Clock Tower was built as a victory column in 1881.", "Nagpur is a large city in the central Indian state of Maharashtra. The 19th-century Nagpur Central Museum displays items found locally, including fossils, sarcophagi and Mughal weaponry. The Raman Science Centre has hands-on exhibits and a planetarium. Sitabuldi Fort, in the Sitabuldi Hills, was the site of an 1817 battle. To the southwest, the immense, domed Deekshabhoomi is a Buddhist monument and pilgrimage site.", "Indore is a city in west-central India. It’s known for the 7-story Rajwada Palace and the Lal Baag Palace, which date back to Indore’s 19th-century Holkar dynasty. The Holkar rulers are honored by a cluster of tombs and cenotaphs at Chhatri Baag. The night market Sarafa Bazar sells street food. East is the Indo-Gothic Gandhi Hall and clock tower. The Jain temple Kanch Mandir has a mirrored mosaic interior.", "Patna is an ancient city that sprawls along the south bank of the Ganges River in Bihar, northeast India. The state capital, it’s home to Bihar Museum, a contemporary landmark exhibiting bronze sculptures and old coins from the region. Nearby, Indo-Saracenic–style Patna Museum displays a casket believed to contain the Buddha’s ashes. Close to the river, the Golghar is a domed colonial granary overlooking the city.", "Bhopal is a city in the central Indian state of Madhya Pradesh. It's one of India’s greenest cities. There are two main lakes, the Upper Lake and the Lower Lake. On the banks of the Upper Lake is Van Vihar National Park, home to tigers, lions and leopards. The State Museum has fossils, paintings and rare Jain sculptures. Taj-ul-Masjid is one of Asia’s largest mosques, with white domes, minarets and a huge courtyard.", "Thane is a city just outside Mumbai, in the western Indian state of Maharashtra. It’s known as the ‘City of Lakes’, and its more than 30 lakes include tree-lined Upvan Lake, a popular recreational spot. Beside Talao Pali Lake, Kopineshwar Mandir is an old, domed Hindu temple dedicated to Lord Shiva. To the west, leopards, monkeys and parakeets inhabit the teak forest and bamboo groves of Sanjay Gandhi National Park.", "Vadodara, also known as Baroda, is the second largest city in the Indian state of Gujarat. It serves as the administrative headquarters of the Vadodara district and is situated on the banks of the Vishwamitri River, 141 kilometres from the state capital of Gandhinagar.", "Visakhapatnam is a port city and industrial center in the Indian state of Andhra Pradesh, on the Bay of Bengal. It's known for its many beaches, including Ramakrishna Beach, home to a preserved submarine at the Kursura Submarine Museum. Nearby are the elaborate Kali Temple and the Visakha Museum, an old Dutch bungalow housing local maritime and historical exhibits."};
+        String desx = city_description[ci - 1];
+        System.out.println(desx+ " Enjoy watching " +name+ " in " +CITY);
+        String[] Mumbai_Theaters ={"Maratha Mandir Theatre","Carnival Cinemas Liberty","Regal Cinema","Eros Cinema","Prithvi Theatre"};
+        String[] Thiruvananthapuram_Theaters ={"Aries Plex SL Cinemas","Carnival Cinemas(Mall of Travancore)","PVR Kripa","Carnival Cinemas","Kairali Theatre"};
+        String[] Chennai_Theaters ={"Cinepolis Multiplex","Gold Cinemas","PVR: Soul Spirit","Rockline Cinemas","Innovative Multiplex"};
+        switch (ci) {
+            case 1 -> Theaters = Mumbai_Theaters;
+            case 2 -> Theaters = Thiruvananthapuram_Theaters;
+            case 3 -> Theaters = Chennai_Theaters;
+        }
     }
     public void English ()throws IOException {
         do {
@@ -180,13 +204,21 @@ public class book_my_seat
         int E;
         System.out.println(TEXT_PURPLE+"                          Select Theatre\n"+TEXT_RESET);
         for(E=0;E<Theaters.length;E++){
-            System.out.println(E+1 + ". "+ Theaters[E]+Type[E]+"Rs."+Cost[E]);
+            System.out.println(E+1 + ". "+ Theaters[E]+"         Rs."+Cost[E]);
         }
         System.out.println("\n*Note: Prices may vary after every run.");
         int theatre = Integer.parseInt(en.readLine());
+        String theatr;
+        System.out.println("Choose row:\n1. Front(f)\n2. Middle(m)\n3. Back(b)\n4. Balcony(B)");
+        theatr = en.readLine();
         System.out.println("Movie Name:" + name);
         System.out.println("Description: \n" + description);
-        amt = Cost[theatre-1];
+        switch (theatr) {
+            case "f" -> amt = Cost[theatre - 1];
+            case "m" -> amt = Cost[theatre - 1] * 2;
+            case "b" -> amt = Cost[theatre - 1] * 1.5;
+            case "B" -> amt = Cost[theatre - 1] * 3;
+        }
         tre = Theaters[theatre-1];
         total = amt * qty;
         System.out.println("Would you like to order snacks to eat while you are watching the movie, " + name + "?");
