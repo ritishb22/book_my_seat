@@ -1,7 +1,9 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.time.LocalDate;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.Scanner;
 
 @SuppressWarnings({"CStyleArrayDeclaration", "SwitchStatementWithTooFewBranches", "EnhancedSwitchMigration"})
@@ -73,6 +75,7 @@ public class book_my_seat
                 throw new IllegalStateException("Unexpected value: " + l);
         }
         obj.City();
+        obj.Date$Time();
         obj.Tre$Snacks();
         obj.Billing();
         obj.Payments();
@@ -133,6 +136,16 @@ public class book_my_seat
             case 19 -> Theaters = Vadodara_Theaters;
             case 20 -> Theaters = Visakhapatnam_Theaters;
         }
+    }
+    public void Date$Time () throws IOException {
+        LocalDate today = LocalDate.now();
+        System.out.println("\nSelect Date:");
+        for (int dt = 1; dt <= 10; dt++){
+            System.out.println(dt+ ". " +today.plusDays(1));
+        }
+        int dte = Integer.parseInt(en.readLine());
+        LocalDate Date = today.plusDays(dte);
+        System.out.println("\nSelect Time:\n1. ");
     }
     public void English ()throws IOException {
         do {
@@ -238,7 +251,7 @@ public class book_my_seat
         int E;
         System.out.println(TEXT_PURPLE+"                          Select Theatre\n"+TEXT_RESET);
         for(E=0;E<Theaters.length;E++){
-            System.out.println(E+1 + ". "+ Theaters[E]+"         Rs."+Cost[E]);
+            System.out.printf("%2d %22s %10s%n", E+1, Theaters[E], "Rs."+Cost[E]);
         }
         System.out.println("\n*Note: Prices may vary after every run.");
         int theatre = Integer.parseInt(en.readLine());
