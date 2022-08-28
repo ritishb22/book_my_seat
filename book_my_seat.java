@@ -145,7 +145,7 @@ public class book_my_seat
         }
         int dte = Integer.parseInt(en.readLine());
         LocalDate Date = today.plusDays(dte);
-        System.out.println("\nSelect Time:\n1. ");
+        System.out.println("\nSelect Time on Date:\n1. " );
     }
     public void English ()throws IOException {
         do {
