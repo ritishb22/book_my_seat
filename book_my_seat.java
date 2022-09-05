@@ -10,10 +10,6 @@ import java.util.Scanner;
 public class book_my_seat
 {
     static book_my_seat obj=new book_my_seat();
-    public static final String TEXT_RESET = "\u001B[0m";
-    public static final String TEXT_GREEN = "\u001B[32m";
-    public static final String TEXT_PURPLE = "\u001B[35m";
-    public static final String TEXT_RED = "\u001B[31m";
 
     BufferedReader en = new BufferedReader(new InputStreamReader(System.in));
     double total = 0, amt = 0, Amt = 0, gst, AMT = 0;
@@ -36,7 +32,7 @@ public class book_my_seat
     public void structure() throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         Calendar aa = Calendar.getInstance();
-        System.out.println("Date and time: " + aa.getTime());
+        System.out.println("\fDate and time: " + aa.getTime());
         System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
         System.out.println(" ");
         System.out.println("                            BBBBBB      OOOO      OOOO    KK  KK            MMM      MMM  YY    YY             SSSSSSS  EEEEEEEE      AA      TTTTTTTTTT   ");
@@ -47,7 +43,7 @@ public class book_my_seat
         System.out.println("                                                                                THINK IT SEE IT");
         System.out.println("                                                                        FIND BEST PRICES ON MOVIE TICKETS");
         System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
-        System.out.println(TEXT_PURPLE+"     Choose the Movie Language of your Choice\n"+TEXT_RESET);
+        System.out.println("     Choose the Movie Language of your Choice\n");
         String[] lang = {"English","Hindi","Tamil","Kannada","Telugu"};
         int i;
         for (i=0;i<lang.length;i++){
@@ -91,7 +87,7 @@ public class book_my_seat
         Scanner cit = new Scanner(System.in);
         int ci = cit.nextInt();
         CITY = City[ci-1];
-        String[] city_description = {"Mumbai is the centre of the Mumbai Metropolitan Region, the sixth most populous metropolitan area in the world with a population of over 2.3 crore (23 million).", "Thiruvananthapuram (or Trivandrum) is the capital of the southern Indian state of Kerala. It's distinguished by its British colonial architecture and many art galleries. It’s also home to Kuthira Malika (or Puthen Malika) Palace, adorned with carved horses and displaying collections related to the Travancore royal family, whose regional capital was here from the 18th–20th centuries.", "Delhi, India’s capital territory, is a massive metropolitan area in the country’s north. In Old Delhi, a neighborhood dating to the 1600s, stands the imposing Mughal-era Red Fort, a symbol of India, and the sprawling Jama Masjid mosque, whose courtyard accommodates 25,000 people. Nearby is Chandni Chowk, a vibrant bazaar filled with food carts, sweets shops and spice stalls.", "Kolkata (formerly Calcutta) is the capital of India's West Bengal state. Founded as an East India Company trading post, it was India's capital under the British Raj from 1773–1911. Today it’s known for its grand colonial architecture, art galleries and cultural festivals. It’s also home to Mother House, headquarters of the Missionaries of Charity, founded by Mother Teresa, whose tomb is on site.", "Chennai, on the Bay of Bengal in eastern India, is the capital of the state of Tamil Nadu. The city is home to Fort St. George, built in 1644 and now a museum showcasing the city’s roots as a British military garrison and East India Company trading outpost, when it was called Madras. Religious sites include Kapaleeshwarar Temple, adorned with carved and painted gods, and St. Mary’s, a 17th-century Anglican church.", "Bengaluru (also called Bangalore) is the capital of India's southern Karnataka state. The center of India's high-tech industry, the city is also known for its parks and nightlife. By Cubbon Park, Vidhana Soudha is a Neo-Dravidian legislative building. Former royal residences include 19th-century Bangalore Palace, modeled after England’s Windsor Castle, and Tipu Sultan’s Summer Palace, an 18th-century teak structure.", "Hyderabad is the capital of southern India's Telangana state. A major center for the technology industry, it's home to many upscale restaurants and shops. Its historic sites include Golconda Fort, a former diamond-trading center that was once the Qutb Shahi dynastic capital. The Charminar, a 16th-century mosque whose 4 arches support towering minarets, is an old city landmark near the long-standing Laad Bazaar.", "Ahmedabad, in western India, is the largest city in the state of Gujarat. The Sabarmati River runs through its center. On the western bank is the Gandhi Ashram at Sabarmati, which displays the spiritual leader’s living quarters and artifacts. Across the river, the Calico Museum of Textiles, once a cloth merchant's mansion, has a significant collection of antique and modern fabrics.", "Pune is a sprawling city in the western Indian state of Maharashtra. It was once the base of the Peshwas (prime ministers) of the Maratha Empire, which lasted from 1674 to 1818. It's known for the grand Aga Khan Palace, built in 1892 and now a memorial to Mahatma Gandhi, whose ashes are preserved in the garden. The 8th-century Pataleshwar Cave Temple is dedicated to the Hindu god Shiva.", "Surat is a large city beside the Tapi River in the west Indian state of Gujarat. Once known for silk weaving, Surat remains a commercial center for textiles, and the New Textile Market area is lined with fabric shops. Overlooking the river, Surat Castle was built in the 1500s to defend the city against Portuguese colonists. Nearby, the Dutch, Armenian and English cemeteries contain elaborate colonial-era tombs.", "Jaipur is the capital of India’s Rajasthan state. It evokes the royal family that once ruled the region and that, in 1727, founded what is now called the Old City, or “Pink City” for its trademark building color. At the center of its stately street grid (notable in India) stands the opulent, colonnaded City Palace complex. With gardens, courtyards and museums, part of it is still a royal residence", "Kanpur or Cawnpore is an industrial city in the central-western part of the state of Uttar Pradesh, India. Founded in 1803, Kanpur became one of the most important commercial and military stations of British India. Kanpur is also the financial capital of Uttar Pradesh.", "Lucknow, a large city in northern India, is the capital of the state of Uttar Pradesh. Toward its center is Rumi Darwaza, a Mughal gateway. Nearby, the 18th-century Bara Imambara shrine has a huge arched hall. Upstairs, Bhool Bhulaiya is a maze of narrow tunnels with city views from its upper balconies. Close by, the grand Victorian Husainabad Clock Tower was built as a victory column in 1881.", "Nagpur is a large city in the central Indian state of Maharashtra. The 19th-century Nagpur Central Museum displays items found locally, including fossils, sarcophagi and Mughal weaponry. The Raman Science Centre has hands-on exhibits and a planetarium. Sitabuldi Fort, in the Sitabuldi Hills, was the site of an 1817 battle. To the southwest, the immense, domed Deekshabhoomi is a Buddhist monument and pilgrimage site.", "Indore is a city in west-central India. It’s known for the 7-story Rajwada Palace and the Lal Baag Palace, which date back to Indore’s 19th-century Holkar dynasty. The Holkar rulers are honored by a cluster of tombs and cenotaphs at Chhatri Baag. The night market Sarafa Bazar sells street food. East is the Indo-Gothic Gandhi Hall and clock tower. The Jain temple Kanch Mandir has a mirrored mosaic interior.", "Patna is an ancient city that sprawls along the south bank of the Ganges River in Bihar, northeast India. The state capital, it’s home to Bihar Museum, a contemporary landmark exhibiting bronze sculptures and old coins from the region. Nearby, Indo-Saracenic–style Patna Museum displays a casket believed to contain the Buddha’s ashes. Close to the river, the Golghar is a domed colonial granary overlooking the city.", "Bhopal is a city in the central Indian state of Madhya Pradesh. It's one of India’s greenest cities. There are two main lakes, the Upper Lake and the Lower Lake. On the banks of the Upper Lake is Van Vihar National Park, home to tigers, lions and leopards. The State Museum has fossils, paintings and rare Jain sculptures. Taj-ul-Masjid is one of Asia’s largest mosques, with white domes, minarets and a huge courtyard.", "Thane is a city just outside Mumbai, in the western Indian state of Maharashtra. It’s known as the ‘City of Lakes’, and its more than 30 lakes include tree-lined Upvan Lake, a popular recreational spot. Beside Talao Pali Lake, Kopineshwar Mandir is an old, domed Hindu temple dedicated to Lord Shiva. To the west, leopards, monkeys and parakeets inhabit the teak forest and bamboo groves of Sanjay Gandhi National Park.", "Vadodara, also known as Baroda, is the second largest city in the Indian state of Gujarat. It serves as the administrative headquarters of the Vadodara district and is situated on the banks of the Vishwamitri River, 141 kilometres from the state capital of Gandhinagar.", "Visakhapatnam is a port city and industrial center in the Indian state of Andhra Pradesh, on the Bay of Bengal. It's known for its many beaches, including Ramakrishna Beach, home to a preserved submarine at the Kursura Submarine Museum. Nearby are the elaborate Kali Temple and the Visakha Museum, an old Dutch bungalow housing local maritime and historical exhibits."};
+        String[] city_description = {"Mumbai is the centre of the Mumbai Metropolitan Region, the sixth most populous metropolitan area in the world with a population of over 2.3 crore (23 million).", "Thiruvananthapuram (or Trivandrum) is the capital of the southern Indian state of Kerala. It's distinguished by its British colonial architecture and many art galleries. It’s also home to Kuthira Malika (or Puthen Malika) Palace, adorned with carved horses and displaying collections related to the Travancore royal family, whose regional capital was here from the 18th–20th centuries.", "Delhi, India’s capital territory, is a massive metropolitan area in the country’s north. In Old Delhi, a neighborhood dating to the 1600s, stands the imposing Mughal-era Red Fort, a symbol of India, and the sprawling Jama Masjid mosque, whose courtyard accommodates 25,000 people. Nearby is Chandni Chowk, a vibrant bazaar filled with food carts, sweets shops and spice stalls.", "Kolkata (formerly Calcutta) is the capital of India's West Bengal state. Founded as an East India Company trading post, it was India's capital under the British Raj from 1773–1911. Today it’s known for its grand colonial architecture, art galleries and cultural festivals. It’s also home to Mother House, headquarters of the Missionaries of Charity, founded by Mother Teresa, whose tomb is on site.", "Chennai, on the Bay of Bengal in eastern India, is the capital of the state of Tamil Nadu. The city is home to Fort St. George, built in 1644 and now a museum showcasing the city’s roots as a British military garrison and East India Company trading outpost, when it was called Madras. Religious sites include Kapaleeshwarar Temple, adorned with carved and painted gods, and St. Mary’s, a 17th-century Anglican church.", "Bengaluru (also called Bangalore) is the capital of India's southern Karnataka state. The center of India's high-tech industry, the city is also known for its parks and nightlife. By Cubbon Park, Vidhana Soudha is a Neo-Dravidian legislative building. Former royal residences include 19th-century Bangalore Palace, modeled after England’s Windsor Castle, and Tipu Sultan’s Summer Palace, an 18th-century teak structure.", "Hyderabad is the capital of southern India's Telangana state. A major center for the technology industry, it's home to many upscale restaurants and shops. Its historic sites include Golconda Fort, a former diamond-trading center that was once the Qutb Shahi dynastic capital. The Charminar, a 16th-century mosque whose 4 arches support towering minarets, is an old city landmark near the long-standing Laad Bazaar.", "Ahmedabad, in western India, is the largest city in the state of Gujarat. The Sabarmati River runs through its center. On the western bank is the Gandhi Ashram at Sabarmati, which displays the spiritual leader’s living quarters and artifacts. Across the river, the Calico Museum of Textiles, once a cloth merchant's mansion, has a significant collection of antique and modern fabrics.", "Pune is a sprawling city in the western Indian state of Maharashtra. It was once the base of the Peshwas (prime ministers) of the Maratha Empire, which lasted from 1674 to 1818. It's known for the grand Aga Khan Palace, built in 1892 and now a memorial to Mahatma Gandhi, whose ashes are preserved in the garden. The 8th-century Pataleshwar Cave Temple is dedicated to the Hindu god Shiva.", "Surat is a large city beside the Tapi River in the west Indian state of Gujarat. Once known for silk weaving, Surat remains a commercial center for textiles, and the New Textile Market area is lined with fabric shops. Overlooking the river, Surat Castle was built in the 1500s to defend the city against Portuguese colonists. Nearby, the Dutch, Armenian and English cemeteries contain elaborate colonial-era tombs.", "Jaipur is the capital of India’s Rajasthan state. It evokes the royal family that once ruled the region and that, in 1727, founded what is now called the Old City, or “Pink City�? for its trademark building color. At the center of its stately street grid (notable in India) stands the opulent, colonnaded City Palace complex. With gardens, courtyards and museums, part of it is still a royal residence", "Kanpur or Cawnpore is an industrial city in the central-western part of the state of Uttar Pradesh, India. Founded in 1803, Kanpur became one of the most important commercial and military stations of British India. Kanpur is also the financial capital of Uttar Pradesh.", "Lucknow, a large city in northern India, is the capital of the state of Uttar Pradesh. Toward its center is Rumi Darwaza, a Mughal gateway. Nearby, the 18th-century Bara Imambara shrine has a huge arched hall. Upstairs, Bhool Bhulaiya is a maze of narrow tunnels with city views from its upper balconies. Close by, the grand Victorian Husainabad Clock Tower was built as a victory column in 1881.", "Nagpur is a large city in the central Indian state of Maharashtra. The 19th-century Nagpur Central Museum displays items found locally, including fossils, sarcophagi and Mughal weaponry. The Raman Science Centre has hands-on exhibits and a planetarium. Sitabuldi Fort, in the Sitabuldi Hills, was the site of an 1817 battle. To the southwest, the immense, domed Deekshabhoomi is a Buddhist monument and pilgrimage site.", "Indore is a city in west-central India. It’s known for the 7-story Rajwada Palace and the Lal Baag Palace, which date back to Indore’s 19th-century Holkar dynasty. The Holkar rulers are honored by a cluster of tombs and cenotaphs at Chhatri Baag. The night market Sarafa Bazar sells street food. East is the Indo-Gothic Gandhi Hall and clock tower. The Jain temple Kanch Mandir has a mirrored mosaic interior.", "Patna is an ancient city that sprawls along the south bank of the Ganges River in Bihar, northeast India. The state capital, it’s home to Bihar Museum, a contemporary landmark exhibiting bronze sculptures and old coins from the region. Nearby, Indo-Saracenic–style Patna Museum displays a casket believed to contain the Buddha’s ashes. Close to the river, the Golghar is a domed colonial granary overlooking the city.", "Bhopal is a city in the central Indian state of Madhya Pradesh. It's one of India’s greenest cities. There are two main lakes, the Upper Lake and the Lower Lake. On the banks of the Upper Lake is Van Vihar National Park, home to tigers, lions and leopards. The State Museum has fossils, paintings and rare Jain sculptures. Taj-ul-Masjid is one of Asia’s largest mosques, with white domes, minarets and a huge courtyard.", "Thane is a city just outside Mumbai, in the western Indian state of Maharashtra. It’s known as the ‘City of Lakes’, and its more than 30 lakes include tree-lined Upvan Lake, a popular recreational spot. Beside Talao Pali Lake, Kopineshwar Mandir is an old, domed Hindu temple dedicated to Lord Shiva. To the west, leopards, monkeys and parakeets inhabit the teak forest and bamboo groves of Sanjay Gandhi National Park.", "Vadodara, also known as Baroda, is the second largest city in the Indian state of Gujarat. It serves as the administrative headquarters of the Vadodara district and is situated on the banks of the Vishwamitri River, 141 kilometres from the state capital of Gandhinagar.", "Visakhapatnam is a port city and industrial center in the Indian state of Andhra Pradesh, on the Bay of Bengal. It's known for its many beaches, including Ramakrishna Beach, home to a preserved submarine at the Kursura Submarine Museum. Nearby are the elaborate Kali Temple and the Visakha Museum, an old Dutch bungalow housing local maritime and historical exhibits."};
         String desx = city_description[ci - 1];
         System.out.println(desx+ " Enjoy watching " +name+ " in " +CITY);
         String[] Mumbai_Theaters ={"Maratha Mandir Theatre","Carnival Cinemas Liberty","Regal Cinema","Eros Cinema","Prithvi Theatre"};
@@ -115,26 +111,46 @@ public class book_my_seat
         String[] Vadodara_Theaters ={"INOX Cinemas","PVR Cinemas","Cinemarc Vihar Cinemas (Pacific Mall)","Cinepolis Cinemas (Inorbit Mall)","Cinemarc Cinemas (Galleria Mall)"};
         String[] Visakhapatnam_Theaters ={"INOX Chitralaya Mall","INOX","INOC Cmr Central Mall","Melody Cinema Hall","Mukta A2 Cinemas Vizag Central Mall"};
         switch (ci) {
-            case 1 -> Theaters = Mumbai_Theaters;
-            case 2 -> Theaters = Thiruvananthapuram_Theaters;
-            case 3 -> Theaters = Delhi_Theaters;
-            case 4 -> Theaters = Kolkata_Theaters;
-            case 5 -> Theaters = Chennai_Theaters;
-            case 6 -> Theaters = Bangalore_Theaters;
-            case 7 -> Theaters = Hyderabad_Theaters;
-            case 8 -> Theaters = Ahmedabad_Theaters;
-            case 9 -> Theaters = Pune_Theaters;
-            case 10 -> Theaters = Surat_Theaters;
-            case 11 -> Theaters = Jaipur_Theaters;
-            case 12 -> Theaters = Kanpur_Theaters;
-            case 13 -> Theaters = Lucknow_Theaters;
-            case 14 -> Theaters = Nagur_Theaters;
-            case 15 -> Theaters = Indore_Theaters;
-            case 16 -> Theaters = Patna_Theaters;
-            case 17 -> Theaters = Bhopal_Theaters;
-            case 18 -> Theaters = Thane_Theaters;
-            case 19 -> Theaters = Vadodara_Theaters;
-            case 20 -> Theaters = Visakhapatnam_Theaters;
+            case 1:
+                Theaters = Mumbai_Theaters;
+            case 2:
+                Theaters = Thiruvananthapuram_Theaters;
+            case 3:
+                Theaters = Delhi_Theaters;
+            case 4:
+                Theaters = Kolkata_Theaters;
+            case 5:
+            Theaters = Chennai_Theaters;
+            case 6:
+                Theaters = Bangalore_Theaters;
+            case 7:
+                Theaters = Hyderabad_Theaters;
+            case 8:
+                Theaters = Ahmedabad_Theaters;
+            case 9:
+                Theaters = Pune_Theaters;
+            case 10:
+                Theaters = Surat_Theaters;
+            case 11:
+                Theaters = Jaipur_Theaters;
+            case 12:
+                Theaters = Kanpur_Theaters;
+            case 13:
+                Theaters = Lucknow_Theaters;
+            case 14:
+                Theaters = Nagur_Theaters;
+            case 15:
+                Theaters = Indore_Theaters;
+            case 16:
+                Theaters = Patna_Theaters;
+            case 17:
+                Theaters = Bhopal_Theaters;
+            case 18:
+                Theaters = Thane_Theaters;
+            case 19:
+                Theaters = Vadodara_Theaters;
+            case 20:
+                Theaters = Visakhapatnam_Theaters;
         }
     }
     public void Date$Time () throws IOException {
@@ -149,7 +165,7 @@ public class book_my_seat
     }
     public void English ()throws IOException {
         do {
-            System.out.println(TEXT_PURPLE+"             Choose from the Movies below\n"+TEXT_RESET);
+            System.out.println("             Choose from the Movies below\n");
             String[] Eng ={"Fantastic Beasts: The Secrets of Dumbledore","Doctor Strange in the Multiverse of Madness","Avatar 2","Thor: Love and Thunder","Jurassic World Dominion","Morbius","Uncharted","Black Adam","The Batman","Black Panther: Wakanda Forever"};
             int E;
             for(E=0;E<Eng.length;E++){
@@ -169,15 +185,15 @@ public class book_my_seat
     }
     public void Hindi ()throws IOException {
         do {
-            System.out.println(TEXT_PURPLE+"             Choose from the Movies below\n"+TEXT_RESET);
-            String[] hin = {"K.G.F: Chapter 2 (Hindi)","Attack: Part 1","Brahmāstra","Prithviraj","Gehraiyaan","Heropanti 2","Gangubai Kathiawadi","Bhool Bhulayaa 2","Bacchan Pandey","The Kashmir Files"};
+            System.out.println("             Choose from the Movies below\n");
+            String[] hin = {"K.G.F: Chapter 2 (Hindi)","Attack: Part 1","Brahm�?stra","Prithviraj","Gehraiyaan","Heropanti 2","Gangubai Kathiawadi","Bhool Bhulayaa 2","Bacchan Pandey","The Kashmir Files"};
             int h;
             for(h=0;h<hin.length;h++){
                 System.out.println(h+1 + ". " + hin[h]);
             }
             System.out.println("To select a movie, type the sl.number of the movie.");
             int a = Integer.parseInt(en.readLine());
-            String[] hin_des = {"The blood-soaked land of Kolar Gold Fields has a new overlord now, Rocky, whose name strikes fear in the heart of his foes. His allies look up to him as their Savior, the government sees him as a threat, and his enemies are clamouring for revenge.", "A cyber soldier who has lost everything puts his life on the line to serve his nation.", "Brahmāstra Part One: Shiva, also known as Brahmāstra, is an upcoming Indian Hindi-language fantasy adventure film written and directed by Ayan Mukerji, and produced by Karan Johar. It stars Amitabh Bachchan, Ranbir Kapoor, Alia Bhatt, Mouni Roy and Nagarjuna Akkineni.", "The heroism of the fearless King Prithviraj Chauhan as he faces off against Muhammad of Ghor.", "Alisha runs her own yoga studio while seeking investors to back her yoga phone app. Flashbacks reveal a wealthy and idyllic childhood with extended family. For reasons she can't understand, her father dragged her and her mother away from that happiness into a life of isolation and need, which somehow led to her mother's suicide. All of that is the backdrop to an affair Alisa begins with her cousin Tia's fiancé, who is a go-getter real estate whiz kid who seems to have money to burn.", "A vigilante is sent on a mission by the government to kill enemy troops. However, things go wrong when he's mistaken for the leader of the troops.", "Young Ganga is tricked by her boyfriend with the promise of a film career and persuaded to leave the countryside for Mumbai. In Mumbai her dreams of a film career come crashing down and she is lured to the underworld.", "Bhool Bhulaiyaa 2 is an upcoming Indian Hindi-language comedy horror film directed by Anees Bazmee and produced by Bhushan Kumar. It is a standalone sequel to Priyadarshan's 2007 iconic horror comedy Bhool Bhulaiyaa. Bhool Bhulaiyaa 2 stars Kartik Aaryan, Tabu and Kiara Advani. The filming began on 9 October 2019.", "A budding director tries to research a merciless gangster to make a film on gangster life, but his secret attempts to conduct the research fail when he gets caught for snooping.", "The Kashmir Files is a heart wrenching narrative of the pain, suffering, struggle & trauma of Kashmiri Pandits, seen through the eyes of Krishna, the protagonist. The film questions eye-opening facts about democracy, religion, politics and humanity."};
+            String[] hin_des = {"The blood-soaked land of Kolar Gold Fields has a new overlord now, Rocky, whose name strikes fear in the heart of his foes. His allies look up to him as their Savior, the government sees him as a threat, and his enemies are clamouring for revenge.", "A cyber soldier who has lost everything puts his life on the line to serve his nation.", "Brahm�?stra Part One: Shiva, also known as Brahm�?stra, is an upcoming Indian Hindi-language fantasy adventure film written and directed by Ayan Mukerji, and produced by Karan Johar. It stars Amitabh Bachchan, Ranbir Kapoor, Alia Bhatt, Mouni Roy and Nagarjuna Akkineni.", "The heroism of the fearless King Prithviraj Chauhan as he faces off against Muhammad of Ghor.", "Alisha runs her own yoga studio while seeking investors to back her yoga phone app. Flashbacks reveal a wealthy and idyllic childhood with extended family. For reasons she can't understand, her father dragged her and her mother away from that happiness into a life of isolation and need, which somehow led to her mother's suicide. All of that is the backdrop to an affair Alisa begins with her cousin Tia's fiancé, who is a go-getter real estate whiz kid who seems to have money to burn.", "A vigilante is sent on a mission by the government to kill enemy troops. However, things go wrong when he's mistaken for the leader of the troops.", "Young Ganga is tricked by her boyfriend with the promise of a film career and persuaded to leave the countryside for Mumbai. In Mumbai her dreams of a film career come crashing down and she is lured to the underworld.", "Bhool Bhulaiyaa 2 is an upcoming Indian Hindi-language comedy horror film directed by Anees Bazmee and produced by Bhushan Kumar. It is a standalone sequel to Priyadarshan's 2007 iconic horror comedy Bhool Bhulaiyaa. Bhool Bhulaiyaa 2 stars Kartik Aaryan, Tabu and Kiara Advani. The filming began on 9 October 2019.", "A budding director tries to research a merciless gangster to make a film on gangster life, but his secret attempts to conduct the research fail when he gets caught for snooping.", "The Kashmir Files is a heart wrenching narrative of the pain, suffering, struggle & trauma of Kashmiri Pandits, seen through the eyes of Krishna, the protagonist. The film questions eye-opening facts about democracy, religion, politics and humanity."};
             System.out.println("Enter the number of tickets you want to buy.");
             qty = Integer.parseInt(en.readLine());
             name = hin[a-1];
@@ -189,7 +205,7 @@ public class book_my_seat
     }
     public void Tamil ()throws IOException {
         do {
-            System.out.println(TEXT_PURPLE+"             Choose from the Movies below\n"+TEXT_RESET);
+            System.out.println("             Choose from the Movies below\n");
             String[] tam = {"Beast","Don","Valimai","Veeramae Vagai Soodum","Kaathu Vaakula Rendu Kadhal","Maaran","Idiot","Hey Sinamika","Mahaan","Vikram"};
             int t;
             for(t=0;t< tam.length;t++){
@@ -209,7 +225,7 @@ public class book_my_seat
     }
     public void Kannada ()throws IOException {
         do {
-            System.out.println(TEXT_PURPLE+"             Choose from the Movies below\n"+TEXT_RESET);
+            System.out.println("             Choose from the Movies below\n");
             String[] kan = {"K.G.F: Chapter 2","James","Love Mocktail 2","By Two Love","Ek Love Ya","Rider","Home Minister","777 Charlie","Roberrt","Yuvarathnaa"};
             int k;
             for(k=0;k<kan.length;k++){
@@ -229,7 +245,7 @@ public class book_my_seat
     }
     public void Telugu ()throws IOException {
         do {
-            System.out.println(TEXT_PURPLE+"             Choose from the Movies below\n"+TEXT_RESET);
+            System.out.println("             Choose from the Movies below\n");
             String[] tel = {"RRR","Radhe Shyam","DJ Tillu","Bheemla Nayak","F3","Acharya","Sarkaru Vaari Paata","Bangarraju","Pushpa: The Rise","Shyam Singha Roy"};
             int T;
             for(T=0;T< tel.length;T++){
@@ -249,7 +265,7 @@ public class book_my_seat
     }
     public void Tre$Snacks ()throws IOException {
         int E;
-        System.out.println(TEXT_PURPLE+"                          Select Theatre\n"+TEXT_RESET);
+        System.out.println("                          Select Theatre\n");
         for(E=0;E<Theaters.length;E++){
             System.out.printf("%2d %22s %10s%n", E+1, Theaters[E], "Rs."+Cost[E]);
         }
@@ -261,10 +277,14 @@ public class book_my_seat
         System.out.println("Movie Name:" + name);
         System.out.println("Description: \n" + description);
         switch (theatr) {
-            case "f" -> amt = Cost[theatre - 1];
-            case "m" -> amt = Cost[theatre - 1] * 2;
-            case "b" -> amt = Cost[theatre - 1] * 1.5;
-            case "B" -> amt = Cost[theatre - 1] * 3;
+            case "f":
+                amt = Cost[theatre - 1];
+            case "m":
+                amt = Cost[theatre - 1];
+            case "b":
+                amt = Cost[theatre - 1];
+            case "B":
+                amt = Cost[theatre - 1];
         }
         tre = Theaters[theatre-1];
         total = amt * qty;
@@ -273,7 +293,7 @@ public class book_my_seat
         snc = en.readLine();
         switch (snc) {
             case "y":
-                System.out.println(TEXT_PURPLE+"           Welcome to Snacks Menu\n"+TEXT_RESET);
+                System.out.println("           Welcome to Snacks Menu\n");
                 String[] Cat = {"Common Snacks","Pizza and Burger","Sandwich","Beverage and Desserts"};
                 int c;
                 for(c=0;c< Cat.length;c++){
@@ -287,7 +307,7 @@ public class book_my_seat
                         int[] num = {1,2,3,4,5,6,7,8,9,10,11};
                         String[] snack = {"Finger Chips","Popcorn","Popcorn","Popcorn","Sweet Corn","Sweet Corn","Cream Roll","Samosa","Vada Pav","Spring Roll","Cheese Balls"};
                         String[] sqty1 = {"1 unit","50 gm","35 gm","20 gm","Large","Small","1 unit","1 unit","1 unit","1 unit","1 unit"};
-                        System.out.println(TEXT_PURPLE+"                          Common Snacks\n"+TEXT_RESET);
+                        System.out.println("                          Common Snacks\n");
                         int S;
                         for(S=0;S<snack.length;S++){
                             System.out.printf("%2d. %20s  %10s  %15s%n", num[S], snack[S], sqty1[S], "Rs."+samt1[S]);
@@ -304,7 +324,7 @@ public class book_my_seat
                         int[] pizza$ = {190,180,160,160,180,130,110};
                         int[] pi = {1,2,3,4,5,6,7};
                         String[] pizza = {"Paneer Pizza","Double Cheese Pizza","Ratlami Pizza","Cheese Pizza","Veg Pizza","Veg Cheese Burger","Veg Burger"};
-                        System.out.println(TEXT_PURPLE+"                  Pizza & Burger\n"+TEXT_RESET);
+                        System.out.println("                  Pizza & Burger\n");
                         int p;
                         for(p=0;p< pizza.length;p++){
                             System.out.printf("%2s. %22s %10s%n", pi[p], pizza[p],"Rs."+pizza$[p]);
@@ -321,7 +341,7 @@ public class book_my_seat
                         int[] sand$ = {90,110,110,110,120,120};
                         int[] s_num = {1,2,3,4,5,6};
                         String[] sand = {"Veg Grill Sandwich","Indorie Sandwich","Onion Sev Sandwich","Cheese Grill Sandwich","Club Sandwich","Veg Grill + Cheese"};
-                        System.out.println(TEXT_PURPLE+"                      Sandwich"+TEXT_RESET);
+                        System.out.println("                      Sandwich");
                         int san;
                         for(san=0;san<sand.length;san++){
                             System.out.printf("%2d. %22s %10s%n", s_num[san],sand[san], "Rs."+sand$[san]);
@@ -335,7 +355,7 @@ public class book_my_seat
                         System.out.println("You have ordered " + sqty + " " + snam + ".");
                         break;
                     case 4:
-                        System.out.println(TEXT_PURPLE+"                   Beverage and Desserts\n"+TEXT_RESET);
+                        System.out.println("                   Beverage and Desserts\n");
                         int[] b_num = {1,2,3,4,5,6,7,8};
                         String[] bev = {"Cold Coffee","Cold Coffee + Ice Cream","Pepsi","Pepsi","Pepsi","Mineral Water","Hot Coffee","Frappe + Ice Cream"};
                         String[] bev_qty = {"300 ml","300 ml","600 ml","450 ml","300 ml","Each","Each","Each"};
@@ -423,8 +443,8 @@ public class book_my_seat
                     System.out.println("Please enter the 4 digit OTP which has been sent to your phone.");
                     otp = Integer.parseInt(en.readLine());
                 } while (1000 >= otp || otp >= 9999);
-                System.out.println(TEXT_RED + "Verifying>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>" + TEXT_RESET);
-                System.out.println(TEXT_GREEN + "Verified" + TEXT_RESET);
+                System.out.println("Verifying>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+                System.out.println("Verified");
                 System.out.println(" ");
                 System.out.println("Payment through Card no. " + card);
                 System.out.println("You have successfully paid Rs." + AMT + " through Credit/Debit Card");
@@ -452,8 +472,8 @@ public class book_my_seat
                     System.out.println("Please enter the 4 digit OTP which has been sent to your phone.");
                     otp = Integer.parseInt(en.readLine());
                 } while (1000 >= otp || otp >= 9999);
-                System.out.println(TEXT_RED + "Verifying>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>" + TEXT_RESET);
-                System.out.println(TEXT_GREEN + "Verified" + TEXT_RESET);
+                System.out.println("Verifying>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+                System.out.println("Verified");
                 System.out.println(" ");
                 System.out.println("Payment through " + user);
                 System.out.println("You have successfully paid Rs." + AMT + " through Net Banking");
@@ -473,8 +493,8 @@ public class book_my_seat
                     System.out.println("Please enter your 6 digit UPI pin");
                     pin = Long.parseLong(en.readLine());
                 } while (100000 >= pin || pin >= 999999);
-                System.out.println(TEXT_RED + "Verifying>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>" + TEXT_RESET);
-                System.out.println(TEXT_GREEN + "Verified" + TEXT_RESET);
+                System.out.println("Verifying>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+                System.out.println("Verified");
                 System.out.println(" ");
                 System.out.println("Payment through " + upi);
                 System.out.println("You have successfully paid Rs." + AMT + " through UPI");
@@ -527,8 +547,8 @@ public class book_my_seat
                     System.out.println("Please enter the 4 digit OTP which has been sent to your phone.");
                     otp = Integer.parseInt(en.readLine());
                 } while (1000 >= otp || otp >= 9999);
-                System.out.println(TEXT_RED + "Verifying>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>" + TEXT_RESET);
-                System.out.println(TEXT_GREEN + "Verified" + TEXT_RESET);
+                System.out.println("Verifying>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+                System.out.println("Verified");
                 System.out.println(" ");
                 System.out.println("Payment through " + Wallet);
                 System.out.println("You have successfully paid Rs." + AMT + " through Digital Wallet");
