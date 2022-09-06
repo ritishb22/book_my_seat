@@ -18,6 +18,11 @@ public class book_my_seat
     double tt = Math.round(Math.random()*100);
     double[] Cost = {249+tt, 397+tt, 500+tt,325+tt,344+tt};
     String[] Theaters;
+    String[] Eng;
+    String[] tam;
+    String[] hin;
+    String[] kan;
+    String[] tel;
     static int T=1;
     public static void main (String args[]) throws IOException {
         String again;
@@ -175,12 +180,24 @@ public class book_my_seat
         }
         int dte = Integer.parseInt(en.readLine());
         LocalDate Date = today.plusDays(dte);
-        System.out.println("\nSelect Time on Date:\n1. " );
+        System.out.println("\nSelect Time on Date:\n1. 5 AM - 8 AM\n2. 9 AM - 12 PM\n3. 1 PM - 4 PM\n4.5 PM- 8 PM\n5. 9 PM - 12 AM");
+        int time = Integer.parseInt(en.readLine());
+        String tme;
+        if(time == 1)
+            tme = "5 AM - 8 AM";
+        if(time == 2)
+            tme = "9 AM - 12 PM";
+        if(time == 3)
+            tme = "1 PM - 4 PM";
+        if(time == 4)
+            tme = "5 PM- 8 PM";
+        if(time == 5)
+            tme = "9 PM - 12 AM";
     }
     public void English ()throws IOException {
         do {
             System.out.println("             Choose from the Movies below\n");
-            String[] Eng ={"Fantastic Beasts: The Secrets of Dumbledore","Doctor Strange in the Multiverse of Madness","Avatar 2","Thor: Love and Thunder","Jurassic World Dominion","Morbius","Uncharted","Black Adam","The Batman","Black Panther: Wakanda Forever"};
+            Eng = new String[]{"Fantastic Beasts: The Secrets of Dumbledore", "Doctor Strange in the Multiverse of Madness", "Avatar 2", "Thor: Love and Thunder", "Jurassic World Dominion", "Morbius", "Uncharted", "Black Adam", "The Batman", "Black Panther: Wakanda Forever"};
             int E;
             for(E=0;E<Eng.length;E++){
              System.out.printf("%2d %2s%n", E+1, Eng[E]);
@@ -200,7 +217,7 @@ public class book_my_seat
     public void Hindi ()throws IOException {
         do {
             System.out.println("             Choose from the Movies below\n");
-            String[] hin = {"K.G.F: Chapter 2 (Hindi)","Attack: Part 1","BrahmÄ?stra","Prithviraj","Gehraiyaan","Heropanti 2","Gangubai Kathiawadi","Bhool Bhulayaa 2","Bacchan Pandey","The Kashmir Files"};
+            hin = new String[]{"K.G.F: Chapter 2 (Hindi)", "Attack: Part 1", "BrahmÄ?stra", "Prithviraj", "Gehraiyaan", "Heropanti 2", "Gangubai Kathiawadi", "Bhool Bhulayaa 2", "Bacchan Pandey", "The Kashmir Files"};
             int h;
             for(h=0;h<hin.length;h++){
                 System.out.printf("%2d %2s%n", h+1, hin[h]);
@@ -220,7 +237,7 @@ public class book_my_seat
     public void Tamil ()throws IOException {
         do {
             System.out.println("             Choose from the Movies below\n");
-            String[] tam = {"Beast","Don","Valimai","Veeramae Vagai Soodum","Kaathu Vaakula Rendu Kadhal","Maaran","Idiot","Hey Sinamika","Mahaan","Vikram"};
+            tam = new String[]{"Beast", "Don", "Valimai", "Veeramae Vagai Soodum", "Kaathu Vaakula Rendu Kadhal", "Maaran", "Idiot", "Hey Sinamika", "Mahaan", "Vikram"};
             int t;
             for(t=0;t< tam.length;t++){
                 System.out.printf("%2d %2s%n", t+1, tam[t]);
@@ -240,7 +257,7 @@ public class book_my_seat
     public void Kannada ()throws IOException {
         do {
             System.out.println("             Choose from the Movies below\n");
-            String[] kan = {"K.G.F: Chapter 2","James","Love Mocktail 2","By Two Love","Ek Love Ya","Rider","Home Minister","777 Charlie","Roberrt","Yuvarathnaa"};
+            kan = new String[]{"K.G.F: Chapter 2","James","Love Mocktail 2","By Two Love","Ek Love Ya","Rider","Home Minister","777 Charlie","Roberrt","Yuvarathnaa"};
             int k;
             for(k=0;k<kan.length;k++){
                 System.out.printf("%2d %2s%n", k+1, kan[k]);
@@ -260,7 +277,7 @@ public class book_my_seat
     public void Telugu ()throws IOException {
         do {
             System.out.println("             Choose from the Movies below\n");
-            String[] tel = {"RRR","Radhe Shyam","DJ Tillu","Bheemla Nayak","F3","Acharya","Sarkaru Vaari Paata","Bangarraju","Pushpa: The Rise","Shyam Singha Roy"};
+            tel = new String[]{"RRR","Radhe Shyam","DJ Tillu","Bheemla Nayak","F3","Acharya","Sarkaru Vaari Paata","Bangarraju","Pushpa: The Rise","Shyam Singha Roy"};
             int T;
             for(T=0;T< tel.length;T++){
                 System.out.printf("%2d %2s%n", T+1, tel[T]);
