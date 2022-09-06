@@ -43,6 +43,12 @@ public class book_my_seat
         System.out.println("                                                                                THINK IT SEE IT");
         System.out.println("                                                                        FIND BEST PRICES ON MOVIE TICKETS");
         System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+        String pass;
+        String user;
+        System.out.println("Enter Username");
+        user = br.readLine();
+        System.out.println("Enter Password:");
+        pass = br.readLine();
         System.out.println("     Choose the Movie Language of your Choice\n");
         String[] lang = {"English","Hindi","Tamil","Kannada","Telugu"};
         int i;
