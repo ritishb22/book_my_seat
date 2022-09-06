@@ -23,7 +23,15 @@ public class book_my_seat
         String again;
         do {
             BufferedReader kk = new BufferedReader(new InputStreamReader(System.in));
-            obj.structure();
+            System.out.println("Categories:");
+            String [] categories = {"Movies", "Stream", "Music Shows", "Comedy Shows", "Sports", "Plays", "Amusement Park", "Workshop", "Kid Zone", "Unique Tours", "Performance", "Gaming", "Laughter Therapy","Outdoor Events" ,"Explore More."};
+            for (int cat = 0; cat < categories.length; cat++){
+                System.out.printf("%2d %2s%n", cat+1, categories[cat]);
+            }
+            System.out.println("Select category:");
+            int ct = Integer.parseInt(kk.readLine());
+            if(ct == 1)
+                obj.structure();
             T+=1;
             System.out.println("do you want to book again ? (yes/no)");
             again = kk.readLine();
@@ -175,7 +183,7 @@ public class book_my_seat
             String[] Eng ={"Fantastic Beasts: The Secrets of Dumbledore","Doctor Strange in the Multiverse of Madness","Avatar 2","Thor: Love and Thunder","Jurassic World Dominion","Morbius","Uncharted","Black Adam","The Batman","Black Panther: Wakanda Forever"};
             int E;
             for(E=0;E<Eng.length;E++){
-             System.out.println(E+1 + ". " + Eng[E]);
+             System.out.printf("%2d %2s%n", E+1, Eng[E]);
             }
             System.out.println("To select a movie, type the sl.number of the movie.");
             int a = Integer.parseInt(en.readLine());
@@ -195,7 +203,7 @@ public class book_my_seat
             String[] hin = {"K.G.F: Chapter 2 (Hindi)","Attack: Part 1","BrahmÄ?stra","Prithviraj","Gehraiyaan","Heropanti 2","Gangubai Kathiawadi","Bhool Bhulayaa 2","Bacchan Pandey","The Kashmir Files"};
             int h;
             for(h=0;h<hin.length;h++){
-                System.out.println(h+1 + ". " + hin[h]);
+                System.out.printf("%2d %2s%n", h+1, hin[h]);
             }
             System.out.println("To select a movie, type the sl.number of the movie.");
             int a = Integer.parseInt(en.readLine());
@@ -215,7 +223,7 @@ public class book_my_seat
             String[] tam = {"Beast","Don","Valimai","Veeramae Vagai Soodum","Kaathu Vaakula Rendu Kadhal","Maaran","Idiot","Hey Sinamika","Mahaan","Vikram"};
             int t;
             for(t=0;t< tam.length;t++){
-                System.out.println(t+1 + ". " + tam[t]);
+                System.out.printf("%2d %2s%n", t+1, tam[t]);
             }
             System.out.println("\nTo select a movie, type the sl.number of the movie.");
             int a = Integer.parseInt(en.readLine());
@@ -235,7 +243,7 @@ public class book_my_seat
             String[] kan = {"K.G.F: Chapter 2","James","Love Mocktail 2","By Two Love","Ek Love Ya","Rider","Home Minister","777 Charlie","Roberrt","Yuvarathnaa"};
             int k;
             for(k=0;k<kan.length;k++){
-                System.out.println(k+1 +  ". " + kan[k]);
+                System.out.printf("%2d %2s%n", k+1, kan[k]);
             }
             System.out.println("\nTo select a movie, type the sl.number of the movie.");
             int a = Integer.parseInt(en.readLine());
@@ -255,7 +263,7 @@ public class book_my_seat
             String[] tel = {"RRR","Radhe Shyam","DJ Tillu","Bheemla Nayak","F3","Acharya","Sarkaru Vaari Paata","Bangarraju","Pushpa: The Rise","Shyam Singha Roy"};
             int T;
             for(T=0;T< tel.length;T++){
-                System.out.println(T+1 + ". " + tel[T]);
+                System.out.printf("%2d %2s%n", T+1, tel[T]);
             }
             System.out.println("\nTo select a movie, type the sl.number of the movie.");
             int a = Integer.parseInt(en.readLine());
