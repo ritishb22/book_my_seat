@@ -171,7 +171,7 @@ public class book_my_seat
         LocalDate today = LocalDate.now();
         System.out.println("\nSelect Date:");
         for (int dt = 1; dt <= 10; dt++){
-            System.out.println(dt+ ". " +today.plusDays(1));
+            System.out.println(dt+ ". " +today.plusDays(dt));
         }
         int dte = Integer.parseInt(en.readLine());
         LocalDate Date = today.plusDays(dte);
