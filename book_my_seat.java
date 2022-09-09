@@ -49,8 +49,10 @@ public class book_my_seat
             int ct = Integer.parseInt(kk.readLine());
             if(ct == 1)
                 obj.structure();
-            if(ct == 1)
+            if(ct == 2)
                 obj.Stream();
+            if(ct == 3)
+                obj.Music_Shows();
             T+=1;
             System.out.println("do you want to book again ? (yes/no)");
             again = kk.readLine();
@@ -651,6 +653,9 @@ public class book_my_seat
         user = en.readLine();
         System.out.println("Enter Password:");
         pass = en.readLine();
+        String[] shows = {"Sunburn Arena ft. DJ SNAKE", "Echoes of Earth Music Festival", "Stebin Ben Live In Concert", "Soundsworth Presents Thaikkudam Bridge at GYLT!", "KOROLOVA", "Morning Ragas-Morning Melodies","Avataran 2022", "Avalon Live in Bangalore", "Justin Bieber Justice World Tour", "Indian Dirt Fest"};
+        String[] venue = {"Venue to be announced", "Venue to be announced", "Phoenix Marketcity, Whitefield", "GYLT:Bengaluru", "GYLT:Bengaluru", "Chowdiyah Memorial Hall", "Nimhans Convention Center", "Sutra: The Lalit Ashok", "Jawaharlal Nehru Stadium, Delhi", "Tribal Adventure Cafe, Bengaluru"};
+        int[] cost$ = {999, 2360, 499, 499, 999, 399, 450, 1000, 4000, 1499};
     }
     public void Thanking () {
         System.out.println("\f");
