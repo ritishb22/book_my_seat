@@ -591,6 +591,9 @@ public class book_my_seat
                 throw new IllegalStateException("Unexpected value: " + pay);
         }
     }
+    public void Push{
+
+}
     public void Thanking () {
         System.out.println("\f");
         System.out.println("            THANK YOU FOR BOOKING TICKETS ON BOOK MY SEAT               ");
