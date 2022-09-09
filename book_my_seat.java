@@ -4,6 +4,7 @@ import java.io.InputStreamReader;
 import java.time.LocalDate;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Random;
 import java.util.Scanner;
 
 @SuppressWarnings({"CStyleArrayDeclaration", "SwitchStatementWithTooFewBranches", "EnhancedSwitchMigration"})
@@ -15,8 +16,18 @@ public class book_my_seat
     double total = 0, amt = 0, Amt = 0, gst, AMT = 0;
     int qty = 0, sna = 0, samt = 0, sqty = 0, stotal = 0, pay = 0;
     String loop, tre, description, name, snam, snak, snc, CITY;
-    double tt = Math.round(Math.random()*100);
-    double[] Cost = {249+tt, 397+tt, 500+tt,325+tt,344+tt};
+    Random random = new Random();
+    int x = random.nextInt(900) + 100;
+    int x1 = random.nextInt(900) + 100;
+    int x2 = random.nextInt(900) + 100;
+    int x3 = random.nextInt(900) + 100;
+    int x4 = random.nextInt(900) + 100;
+    int x5 = random.nextInt(900) + 100;
+    int x6 = random.nextInt(900) + 100;
+    int x7 = random.nextInt(900) + 100;
+    int x8 = random.nextInt(900) + 100;
+    int x9 = random.nextInt(900) + 100;
+    double[] Cost = {x,x1,x2,x3,x4,x5,x6,x7,x8,x9};
     String[] Theaters;
     String[] Eng;
     String[] tam;
@@ -37,6 +48,8 @@ public class book_my_seat
             int ct = Integer.parseInt(kk.readLine());
             if(ct == 1)
                 obj.structure();
+            if(ct == 1)
+                obj.Stream();
             T+=1;
             System.out.println("do you want to book again ? (yes/no)");
             again = kk.readLine();
@@ -217,7 +230,7 @@ public class book_my_seat
     public void Hindi ()throws IOException {
         do {
             System.out.println("             Choose from the Movies below\n");
-            hin = new String[]{"K.G.F: Chapter 2 (Hindi)", "Attack: Part 1", "BrahmÄ?stra", "Prithviraj", "Gehraiyaan", "Heropanti 2", "Gangubai Kathiawadi", "Bhool Bhulayaa 2", "Bacchan Pandey", "The Kashmir Files"};
+            hin = new String[]{"K.G.F: Chapter 2 (Hindi)", "Attack: Part 1", "Brahmastra", "Prithviraj", "Gehraiyaan", "Heropanti 2", "Gangubai Kathiawadi", "Bhool Bhulayaa 2", "Bacchan Pandey", "The Kashmir Files"};
             int h;
             for(h=0;h<hin.length;h++){
                 System.out.printf("%2d %2s%n", h+1, hin[h]);
