@@ -28,6 +28,7 @@ public class book_my_seat
     int x8 = random.nextInt(900) + 100;
     int x9 = random.nextInt(900) + 100;
     double[] Cost = {x,x1,x2,x3,x4,x5,x6,x7,x8,x9};
+    String[] Type = {"2D", "3D", "IMAX 3D", "IMAX 2D", "2D", "3D", "IMAX 3D", "IMAX 2D", "2D", "3D", "IMAX 3D", "IMAX 2D"};
     String[] Theaters;
     String[] Eng;
     String[] tam;
@@ -311,7 +312,7 @@ public class book_my_seat
         int E;
         System.out.println("                          Select Theatre\n");
         for(E=0;E<Theaters.length;E++){
-            System.out.printf("%2d %22s %10s%n", E+1, Theaters[E], "Rs."+Cost[E]);
+            System.out.printf("%2d %22s %22s %10s%n", E+1, Theaters[E], Type[E], "Rs."+Cost[E]);
         }
         System.out.println("\n*Note: Prices may vary after every run.");
         int theatre = Integer.parseInt(en.readLine());
