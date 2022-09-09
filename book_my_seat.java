@@ -1,4 +1,4 @@
-import java.io.BufferedReader;
+import java.io.;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.time.LocalDate;
@@ -624,7 +624,12 @@ public class book_my_seat
         user = en.readLine();
         System.out.println("Enter Password:");
         pass = en.readLine();
-        String[] Stream = {"Ex 1", "Ex 2"};
+        System.out.println("  Choose the Stream of your Choice\n");
+        String[] Stream = {"Top Gun: Maverick","Fantastic Beasts: The Secrets Of Dumbledore","Orphan: First Kill (2022)","Ragdoll (TV Series)","Unforgotten: Series 1","Angel","Memory","Sherwood: TV Series","Spider-Man: No Way Home (Movie + Special Extra Content)","Jurassic World: Dominion"};
+        String[] Dess = {"Set 30 years after the events of `Top Gun` (1986), the sequel hinges on Captain Pete Mitchell`s (Tom Cruise) attempts to come to terms with his past, while training his friend`s son (Miles Teller) for a dangerous mission.","Albus Dumbledore gathers a ragtag group of wizards and witches to stand against the growing might of his one-time friend, the dark wizard Gellert Grindelwald.","After escaping from the psychiatric facility she was being held in, Esther poses as the daughter of a wealthy family to continue her reign of terror.","The police is on the hunt for the Ragdoll killer, who sews victims up in the form of a doll after murdering them.","Each season of this British crime series tackles a new case, from the death of a 17-year-old who disappeared in 1976 to the murder of a school girl, who vanished in 1999.","After finding a wish-granting watch, a young, unpopular girl named Angel grapples with her desires and attempts to stay true to herself.","A veteran assassin struggling with memory loss is forced to go on the run when he stumbles across delicate information that could destroy his wealthy clients.","Based on real events that took place in the UK in 2004, this crime series follows killings that take place in a small community that`s already suffering from a choppy past.","Here we present the movie + special extra content, exclusively available with the purchase of SPIDER-MAN NO WAY HOME.","In a world where dinosaurs and humans share an uneasy coexistence, Owen Grady must put together a crew of daredevils to rescue a baby raptor and his adoptive daughter, while escaping the clutches of a sadistic billionaire."};
+       int stream;
+        for ( stream= 0; stream< Stream.length; stream++){
+            System.out.printf("%2d. %1s%n", stream+1, Stream[stream]);
     }
     public void Thanking () {
         System.out.println("\f");
@@ -633,10 +638,10 @@ public class book_my_seat
         System.out.println("                  FIND BEST PRICES ON MOVIE TICKETS                      ");
         System.out.println(" ");
         System.out.println("  ||||||  ||          /\\     ||||||||          |||||    ||||         //    ");
-        System.out.println("  ||      ||         //\\\\       ||            ||   // ||    ||  00  //     ");
-        System.out.println("  ||||||  ||        //  \\\\      ||               //   ||    ||     //      ");
-        System.out.println("  ||      ||       //||||\\\\     ||             //     ||    ||    //  00   ");
-        System.out.println("  ||      ||||||| //      \\\\    ||            |||||||   ||||     //       ");
+        System.out.println("  ||      ||         // \\       ||            ||   // ||    ||  00  //     ");
+        System.out.println("  ||||||  ||        //   \\      ||               //   ||    ||     //      ");
+        System.out.println("  ||      ||       //|||||\\     ||             //     ||    ||    //  00   ");
+        System.out.println("  ||      ||||||| //       \\    ||            |||||||   ||||     //       ");
         System.out.println(" ");
         System.out.println("                       ON YOUR SECOND PURCHASE                          ");
         System.out.println(" ");
