@@ -3,7 +3,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.time.LocalDate;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -13,20 +12,19 @@ public class book_my_seat
     static book_my_seat obj=new book_my_seat();
 
     BufferedReader en = new BufferedReader(new InputStreamReader(System.in));
-    double total = 0, amt = 0, Amt = 0, gst, AMT = 0;
-    int qty = 0, sna = 0, samt = 0, sqty = 0, stotal = 0, pay = 0;
+    double total, amt, Amt, gst, AMT;
+    int qty, sna, samt, sqty, stotal, pay;
     String loop, tre, description, name, snam, snak, snc, CITY;
-    Random random = new Random();
-    int x = random.nextInt(900) + 100;
-    int x1 = random.nextInt(900) + 100;
-    int x2 = random.nextInt(900) + 100;
-    int x3 = random.nextInt(900) + 100;
-    int x4 = random.nextInt(900) + 100;
-    int x5 = random.nextInt(900) + 100;
-    int x6 = random.nextInt(900) + 100;
-    int x7 = random.nextInt(900) + 100;
-    int x8 = random.nextInt(900) + 100;
-    int x9 = random.nextInt(900) + 100;
+    double x = Math.random()*1000;
+    double x1 = Math.random()*1000;
+    double x2 = Math.random()*1000;
+    double x3 = Math.random()*1000;
+    double x4 = Math.random()*1000;
+    double x5 = Math.random()*1000;
+    double x6 = Math.random()*1000;
+    double x7 = Math.random()*1000;
+    double x8 = Math.random()*1000;
+    double x9 = Math.random()*1000;
     double[] Cost = {x,x1,x2,x3,x4,x5,x6,x7,x8,x9};
     String[] Type = {"2D", "3D", "IMAX 3D", "IMAX 2D", "2D", "3D", "IMAX 3D", "IMAX 2D", "2D", "3D", "IMAX 3D", "IMAX 2D"};
     String[] Theaters;
@@ -323,16 +321,7 @@ public class book_my_seat
         theatr = en.readLine();
         System.out.println("Movie Name:" + name);
         System.out.println("Description: \n" + description);
-        switch (theatr) {
-            case "f":
-                amt = Cost[theatre - 1];
-            case "m":
-                amt = Cost[theatre - 1];
-            case "b":
-                amt = Cost[theatre - 1];
-            case "B":
-                amt = Cost[theatre - 1];
-        }
+        amt = Cost[theatre - 1];
         tre = Theaters[theatre-1];
         total = amt * qty;
         System.out.println("Would you like to order snacks to eat while you are watching the movie, " + name + "?");
@@ -490,7 +479,7 @@ public class book_my_seat
                     System.out.println("Please enter the 4 digit OTP which has been sent to your phone.");
                     otp = Integer.parseInt(en.readLine());
                 } while (1000 >= otp || otp >= 9999);
-                System.out.println("Verifying>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+                System.out.println("Verifying>>>>>>>>>>>>>>>>>>>>");
                 System.out.println("Verified");
                 System.out.println(" ");
                 System.out.println("Payment through Card no. " + card);
@@ -633,6 +622,7 @@ public class book_my_seat
         for (stream = 0; stream < Stream.length; stream++) {
             System.out.printf("%2d. %1s%n", stream + 1, Stream[stream]);
         }
+        int str = (int) Math.random()*1000;
     }
     public void Music_Shows () throws IOException{
         Calendar aa = Calendar.getInstance();
