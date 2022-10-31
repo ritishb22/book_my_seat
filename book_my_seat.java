@@ -53,8 +53,6 @@ public class book_my_seat
                 obj.Stream();
             if(ct == 3)
                 obj.Music_Shows();
-            if(ct == 4)
-                obj.Sports();
             T+=1;
             System.out.println("do you want to book again ? (yes/no)");
             again = kk.readLine();
@@ -596,7 +594,7 @@ public class book_my_seat
                     System.out.println("Please enter the 4 digit OTP which has been sent to your phone.");
                     otp = Integer.parseInt(en.readLine());
                 } while (1000 >= otp || otp >= 9999);
-                System.out.println("Verifying>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+                System.out.println("Verifying>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
                 System.out.println("Verified");
                 System.out.println(" ");
                 System.out.println("Payment through " + Wallet);
@@ -629,13 +627,12 @@ public class book_my_seat
         System.out.println("Enter Password:");
         pass = en.readLine();
         System.out.println("  Choose the Stream of your Choice\n");
-        String[] Stream = {"Top Gun: Maverick", "Fantastic Beasts: The Secrets Of Dumbledore", "Orphan: First Kill (2022)", "Ragdoll (TV Series)", "Unforgotten: Series 1", "Angel", "Memory", "Sherwood: TV Series", "Spider-Man: No Way Home", "Jurassic World: Dominion","The Hulk","The Spacewalker","Run Hide Fight","Tailgate","Fear Of Rain","The Heist Of The Century","Stem Cell","The Tunnel","Game Of Power","Dune"};
-        String[] Dess = {"Set 30 years after the events of `Top Gun` (1986), the sequel hinges on Captain Pete Mitchell`s (Tom Cruise) attempts to come to terms with his past, while training his friend`s son (Miles Teller) for a dangerous mission.", "Albus Dumbledore gathers a ragtag group of wizards and witches to stand against the growing might of his one-time friend, the dark wizard Gellert Grindelwald.", "After escaping from the psychiatric facility she was being held in, Esther poses as the daughter of a wealthy family to continue her reign of terror.", "The police is on the hunt for the Ragdoll killer, who sews victims up in the form of a doll after murdering them.", "Each season of this British crime series tackles a new case, from the death of a 17-year-old who disappeared in 1976 to the murder of a school girl, who vanished in 1999.", "After finding a wish-granting watch, a young, unpopular girl named Angel grapples with her desires and attempts to stay true to herself.", "A veteran assassin struggling with memory loss is forced to go on the run when he stumbles across delicate information that could destroy his wealthy clients.", "Based on real events that took place in the UK in 2004, this crime series follows killings that take place in a small community that`s already suffering from a choppy past.", "Here we present the movie + special extra content, exclusively available with the purchase of SPIDER-MAN NO WAY HOME.", "In a world where dinosaurs and humans share an uneasy coexistence, Owen Grady must put together a crew of daredevils to rescue a baby raptor and his adoptive daughter, while escaping the clutches of a sadistic billionaire.","When scientist Bruce Banner is transformed into a giant, super-human mutant, he will have to fight the forces of evil - while fighting the evil within himself.","True story of two Russian cosmonauts preparing to perform the worlds first spacewalk in this adventure.","This action thriller revolves around a teenager who must use her wits and compassion to fight against some deadly shooters.","Hans looks like a control freak, but is actually a very vulnerable guy. Under the pressure of his domineering mum to get home on time, he drives his family of four on the highway in a reckless way. His arrogance rubs another driver in a white van the wrong way and this man will stop at nothing to revenge.","This drama thriller explores a girl`s struggle with schizophrenia, as she attempts to understand what`s real and what`s not.","Based on the Banco Rio bank robbery, this twist filled drama explores one of the most famous crimes of Argentina.","A doctor`s stem-cell experiments lead to a mutated virus that spreads through humans. Unbeknownst to Rita, she encounters the scientist while on a weekend in the mountains.","In this thriller, a tanker collision traps people in a tunnel with a deadly fire amidst a raging blizzard.","Antonio, the Chief Editor of an important newspaper, must choose a successor between Maca, her close disciple and Vargas, a manipulative journalist who knows every trick in the book.","Feature adaptation of Frank Herbert`s science fiction novel, Dune revolves around Paul Atreides, who leads nomadic tribes in a battle to control the desert planet Arrakis."};
-        int[] cosst = {299, 239, 499, 99, 599, 399, 459, 1000, 189, 499, 399, 199, 299, 99, 199, 499, 359, 159,99,199};
+        String[] Stream = {"Top Gun: Maverick", "Fantastic Beasts: The Secrets Of Dumbledore", "Orphan: First Kill (2022)", "Ragdoll (TV Series)", "Unforgotten: Series 1", "Angel", "Memory", "Sherwood: TV Series", "Spider-Man: No Way Home (Movie + Special Extra Content)", "Jurassic World: Dominion","The Hulk",""};
+        String[] Dess = {"Set 30 years after the events of `Top Gun` (1986), the sequel hinges on Captain Pete Mitchell`s (Tom Cruise) attempts to come to terms with his past, while training his friend`s son (Miles Teller) for a dangerous mission.", "Albus Dumbledore gathers a ragtag group of wizards and witches to stand against the growing might of his one-time friend, the dark wizard Gellert Grindelwald.", "After escaping from the psychiatric facility she was being held in, Esther poses as the daughter of a wealthy family to continue her reign of terror.", "The police is on the hunt for the Ragdoll killer, who sews victims up in the form of a doll after murdering them.", "Each season of this British crime series tackles a new case, from the death of a 17-year-old who disappeared in 1976 to the murder of a school girl, who vanished in 1999.", "After finding a wish-granting watch, a young, unpopular girl named Angel grapples with her desires and attempts to stay true to herself.", "A veteran assassin struggling with memory loss is forced to go on the run when he stumbles across delicate information that could destroy his wealthy clients.", "Based on real events that took place in the UK in 2004, this crime series follows killings that take place in a small community that`s already suffering from a choppy past.", "Here we present the movie + special extra content, exclusively available with the purchase of SPIDER-MAN NO WAY HOME.", "In a world where dinosaurs and humans share an uneasy coexistence, Owen Grady must put together a crew of daredevils to rescue a baby raptor and his adoptive daughter, while escaping the clutches of a sadistic billionaire.","When scientist Bruce Banner is transformed into a giant, super-human mutant, he will have to fight the forces of evil - while fighting the evil within himself."};
+        int stream;
+        for (stream = 0; stream < Stream.length; stream++) {
+            System.out.printf("%2d. %1s%n", stream + 1, Stream[stream]);
         }
-
-
-
     }
     public void Music_Shows () throws IOException{
         Calendar aa = Calendar.getInstance();
@@ -660,120 +657,17 @@ public class book_my_seat
         String[] venue = {"Venue to be announced", "Venue to be announced", "Phoenix Marketcity, Whitefield", "GYLT:Bengaluru", "GYLT:Bengaluru", "Chowdiyah Memorial Hall", "Nimhans Convention Center", "Sutra: The Lalit Ashok", "Jawaharlal Nehru Stadium, Delhi", "Tribal Adventure Cafe, Bengaluru", "Bhartiya Mall, Bengaluru", "Sutra: The Lalit Ashok", "Hard Rock Cafe, Bengaluru", "Kitty Ko, The Lalit Ashok, Bengaluru", "Venue to Announced", "Ramada by Wyndham, Yelahanka", "Chowdiah Memorial Hall, Bengaluru", "Hard Rock Cafe, Whitefield"};
         int[] cost$ = {999, 2360, 499, 499, 999, 399, 450, 1000, 4000, 1499, 499, 1000, 750, 499, 999, 2499, 350, 750};
     }
-    public void Sports () throws IOException {
-        Calendar aa = Calendar.getInstance();
-        System.out.println("\fDate and time: " + aa.getTime());
-        System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-        System.out.println(" ");
-        System.out.println("                            BBBBBB      OOOO      OOOO    KK  KK            MMM      MMM  YY    YY             SSSSSSS  EEEEEEEE      AA      TTTTTTTTTT   ");
-        System.out.println("                            BB   BB   OO    OO  OO    OO  KK KK             MM MM  MM MM   YY  YY             SS        EE           AA AA        TT       ");
-        System.out.println("                            BBBBBB    OO    OO  OO    OO  KKKK              MM  MM MM MM    YYYY               SSSSSSS  EEEEEEE     AA   AA       TT       ");
-        System.out.println("                            BB   BB   OO    OO  OO    OO  KK KK             MM    M   MM     YY                      SS EE         AAAAAAAAA      TT       ");
-        System.out.println("                            BBBBBB      OOOO      OOOO    KK  KK            MM        MM     YY                SSSSSSS  EEEEEEEE  AA       AA     TT       ");
-        System.out.println("                                                                                THINK IT SEE IT");
-        System.out.println("                                                                        FIND BEST PRICES ON MOVIE TICKETS");
-        System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
-        String pass;
-        String user;
-        System.out.println("Enter Username");
-        user = en.readLine();
-        System.out.println("Enter Password:");
-        pass = en.readLine();
-        system.out.println("Select the sports you want to watch");
-        int[] od = {1,2,3,4,5,6,7};
-        String[] Sports = {"E-Sports","Football","Cricket","Archery","Badminton","Basketball","Chess","Golf","Running","Cycling","Tennies"};
-        int sp;
-        for(sp=0;sp< Sports.length;sp++){
-            System.out.printf();
-        }
-        int chosse = Integer.parseInt(en.readLine());
-        switch (chosse){
-        case 1:
-            System.out.println("E-Sports");
-            system.out.println("Select the E-Sports you want to watch");
-            int[] es = {1,2,3,4,5,6,7};
-            String[] ESports = {"Free Fire Solo And Squad (Bermuda)","Call of Duty Mobile Tournament","Online Game - Lost Treasure of Sundarban","Online Game - Flight 9032 Murder Mystery","The Covid Lab - An Online Escape Rooms Experience","Who`s the Killer - An Online Murder Mystery","Johnson Call Of Duty Mobile Tournament","Indian Chess League 2022"};
-            int ec = Integer.parseInt(en.readLine());
-            if(ec == 1){
-                System.out.println("you have chosen - 'Free Fire Solo And Squad (Bermuda)'");
-                System.out.println();}
-            else if(ec == 2){
-                System.out.println("you have chosen - 'Call of Duty Mobile Tournament'");
-                System.out.println();}
-            else if(ec == 3){
-                System.out.println("you have chosen - 'COnline Game - Lost Treasure of Sundarban'");
-                System.out.println();}
-            else if(ec == 4){
-                System.out.println("you have chosen - 'Online Game - Flight 9032 Murder Mystery'");
-                System.out.println();}
-            else if(ec == 5){
-                System.out.println("you have chosen - 'The Covid Lab - An Online Escape Rooms Experience'");
-                System.out.println();}
-            else if(ec == 6){
-                System.out.println("you have chosen - 'Who`s the Killer - An Online Murder Mystery'");
-                System.out.println();}
-            else if(ec == 7){
-                System.out.println("you have chosen - 'Johnson Call Of Duty Mobile Tournament'");
-                System.out.println();}
-            else if(ec == 8){
-                System.out.println("you have chosen - 'Indian Chess League 2022'");
-                System.out.println();}
-        break;
-        case 2:
-            System.out.println("Football");
-            int[] fb = {1,2,3,4,5,6,7};
-            system.out.println("Select the Football match you want to watch");
-            String[] Football = {"Bologna |vs| Monza","Barcelona |vs| Viktoria PLazen","Napoli |vs| Liverpool","Manchester city |vs| Milan","Manchester united |vs| Aston villa","Argentina |vs| Italy","Germany |vs| Brazil","Russia (USSR) |vs| England"};
-            if(fc == 1){
-                System.out.println("you have chosen - 'Bologna |vs| Monza'");
-                System.out.println();}
-            else if(fc == 2){
-                System.out.println("you have chosen - 'Barcelona |vs| Viktoria PLazen'");
-                System.out.println();}
-            else if(fc == 3){
-                System.out.println("you have chosen - 'Napoli |vs| Liverpool'");
-                System.out.println();}
-            else if(fc == 4){
-                System.out.println("you have chosen - 'Manchester city |vs| Milan'");
-                System.out.println();}
-            else if(fc == 5){
-                System.out.println("you have chosen - 'Manchester united |vs| Aston villa'");
-                System.out.println();}
-            else if(fc == 6){
-                System.out.println("you have chosen - 'Argentina |vs| Italy'");
-                System.out.println();}
-            else if(fc == 7){
-                System.out.println("you have chosen - 'Germany |vs| Brazil'");
-                System.out.println();}
-            else if(fc == 8){
-                System.out.println("you have chosen - 'Russia (USSR) |vs| England'");
-                System.out.println();}
-            break;
-        break;
-        case 3:
-        ;
-        break;
-        case 4:
-        ;
-        break;
-        case 5:
-        ;
-        break;
-        default:
-        }
-    }
-
     public void Thanking () {
         System.out.println("\f");
         System.out.println("            THANK YOU FOR BOOKING TICKETS ON BOOK MY SEAT               ");
         System.out.println("                          THINK IT SEE IT                               ");
-        System.out.println("                  FIND BEST PRICES ON MOVIE TICKETS                     ");
+        System.out.println("                  FIND BEST PRICES ON MOVIE TICKETS                      ");
         System.out.println(" ");
         System.out.println("  ||||||  ||          /\\     ||||||||          |||||    ||||         //    ");
         System.out.println("  ||      ||         // \\       ||            ||   // ||    ||  00  //     ");
         System.out.println("  ||||||  ||        //   \\      ||               //   ||    ||     //      ");
         System.out.println("  ||      ||       //|||||\\     ||             //     ||    ||    //  00   ");
-        System.out.println("  ||      ||||||| //       \\    ||            |||||||   ||||     //        ");
+        System.out.println("  ||      ||||||| //       \\    ||            |||||||   ||||     //       ");
         System.out.println(" ");
         System.out.println("                       ON YOUR SECOND PURCHASE                          ");
         System.out.println(" ");
