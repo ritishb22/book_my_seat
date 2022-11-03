@@ -627,11 +627,158 @@ public class book_my_seat
         System.out.println("Enter Password:");
         pass = en.readLine();
         System.out.println("  Choose the Stream of your Choice\n");
-        String[] Stream = {"Top Gun: Maverick", "Fantastic Beasts: The Secrets Of Dumbledore", "Orphan: First Kill (2022)", "Ragdoll (TV Series)", "Unforgotten: Series 1", "Angel", "Memory", "Sherwood: TV Series", "Spider-Man: No Way Home (Movie + Special Extra Content)", "Jurassic World: Dominion","The Hulk",""};
-        String[] Dess = {"Set 30 years after the events of `Top Gun` (1986), the sequel hinges on Captain Pete Mitchell`s (Tom Cruise) attempts to come to terms with his past, while training his friend`s son (Miles Teller) for a dangerous mission.", "Albus Dumbledore gathers a ragtag group of wizards and witches to stand against the growing might of his one-time friend, the dark wizard Gellert Grindelwald.", "After escaping from the psychiatric facility she was being held in, Esther poses as the daughter of a wealthy family to continue her reign of terror.", "The police is on the hunt for the Ragdoll killer, who sews victims up in the form of a doll after murdering them.", "Each season of this British crime series tackles a new case, from the death of a 17-year-old who disappeared in 1976 to the murder of a school girl, who vanished in 1999.", "After finding a wish-granting watch, a young, unpopular girl named Angel grapples with her desires and attempts to stay true to herself.", "A veteran assassin struggling with memory loss is forced to go on the run when he stumbles across delicate information that could destroy his wealthy clients.", "Based on real events that took place in the UK in 2004, this crime series follows killings that take place in a small community that`s already suffering from a choppy past.", "Here we present the movie + special extra content, exclusively available with the purchase of SPIDER-MAN NO WAY HOME.", "In a world where dinosaurs and humans share an uneasy coexistence, Owen Grady must put together a crew of daredevils to rescue a baby raptor and his adoptive daughter, while escaping the clutches of a sadistic billionaire.","When scientist Bruce Banner is transformed into a giant, super-human mutant, he will have to fight the forces of evil - while fighting the evil within himself."};
+        String[] Stream = {"Top Gun: Maverick", "Fantastic Beasts: The Secrets Of Dumbledore", "Orphan: First Kill (2022)", "Ragdoll (TV Series)", "Unforgotten: Series 1", "Angel", "Memory", "Sherwood: TV Series", "Spider-Man: No Way Home (Movie + Special Extra Content)", "Jurassic World: Dominion","The Hulk","Fantastic Beasts: The Secrets of Dumbledore", "Doctor Strange in the Multiverse of Madness", "Avatar 2", "Thor: Love and Thunder", "Jurassic World Dominion", "Morbius", "Uncharted", "Black Adam", "The Batman", "Black Panther: Wakanda Forever","K.G.F: Chapter 2 (Hindi)", "Attack: Part 1", "Brahmastra", "Prithviraj", "Gehraiyaan", "Heropanti 2", "Gangubai Kathiawadi", "Bhool Bhulayaa 2", "Bacchan Pandey", "The Kashmir Files"};
+        String[] Dess = {"Set 30 years after the events of `Top Gun` (1986), the sequel hinges on Captain Pete Mitchell`s (Tom Cruise) attempts to come to terms with his past, while training his friend`s son (Miles Teller) for a dangerous mission.", "Albus Dumbledore gathers a ragtag group of wizards and witches to stand against the growing might of his one-time friend, the dark wizard Gellert Grindelwald.", "After escaping from the psychiatric facility she was being held in, Esther poses as the daughter of a wealthy family to continue her reign of terror.", "The police is on the hunt for the Ragdoll killer, who sews victims up in the form of a doll after murdering them.", "Each season of this British crime series tackles a new case, from the death of a 17-year-old who disappeared in 1976 to the murder of a school girl, who vanished in 1999.", "After finding a wish-granting watch, a young, unpopular girl named Angel grapples with her desires and attempts to stay true to herself.", "A veteran assassin struggling with memory loss is forced to go on the run when he stumbles across delicate information that could destroy his wealthy clients.", "Based on real events that took place in the UK in 2004, this crime series follows killings that take place in a small community that`s already suffering from a choppy past.", "Here we present the movie + special extra content, exclusively available with the purchase of SPIDER-MAN NO WAY HOME.", "In a world where dinosaurs and humans share an uneasy coexistence, Owen Grady must put together a crew of daredevils to rescue a baby raptor and his adoptive daughter, while escaping the clutches of a sadistic billionaire.","When scientist Bruce Banner is transformed into a giant, super-human mutant, he will have to fight the forces of evil - while fighting the evil within himself.","Professor Albus Dumbledore knows the powerful, dark wizard Gellert Grindelwald is moving to seize control of the wizarding world. Unable to stop him alone, he entrusts magizoologist Newt Scamander to lead an intrepid team of wizards and witches. They soon encounter an array of old and new beasts as they clash with Grindelwald's growing legion of followers.","Dr Stephen Strange casts a forbidden spell that opens a portal to the multiverse. However, a threat emerges that may be too big for his team to handle.","Jake Sully and Ney'tiri have formed a family and are doing everything to stay together. However, they must leave their home and explore the regions of Pandora. When an ancient threat resurfaces, Jake must fight a difficult war against the humans.","Thor: Love and Thunder is an upcoming American superhero film based on the Marvel Comics character Thor, produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures. It is intended to be the direct sequel to Thor: Ragnarok and the 29th film in the Marvel Cinematic Universe.","The future of mankind hangs in the balance as humans and dinosaurs coexist following the destruction of Isla Nublar.", "Dangerously ill with a rare blood disorder and determined to save others from the same fate, Dr. Morbius attempts a desperate gamble. While at first it seems to be a radical success, a darkness inside of him is soon unleashed.", "Treasure hunter Victor \"Sully\" Sullivan recruits street-smart Nathan Drake to help him recover a 500-year-old lost fortune amassed by explorer Ferdinand Magellan. What starts out as a heist soon becomes a globe-trotting, white-knuckle race to reach the prize before the ruthless Santiago Moncada can get his hands on it. If Sully and Nate can decipher the clues and solve one of the world's oldest mysteries, they stand to find $5 billion in treasure -- but only if they can learn to work together.", "Black Adam is an upcoming American superhero film based on the DC Comics character of the same name. Produced by New Line Cinema, DC Films, Seven Bucks Productions, and FlynnPictureCo., and set for distribution by Warner Bros.","Batman ventures into Gotham City's underworld when a sadistic killer leaves behind a trail of cryptic clues. As the evidence begins to lead closer to home and the scale of the perpetrator's plans become clear, he must forge new relationships, unmask the culprit and bring justice to the abuse of power and corruption that has long plagued the metropolis.", "Black Panther: Wakanda Forever is an upcoming American superhero film based on the Marvel Comics character Black Panther. Produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures, it is intended to be the sequel to Black Panther and the 30th film in the Marvel Cinematic Universe.","The blood-soaked land of Kolar Gold Fields has a new overlord now, Rocky, whose name strikes fear in the heart of his foes. His allies look up to him as their Savior, the government sees him as a threat, and his enemies are clamouring for revenge.", "A cyber soldier who has lost everything puts his life on the line to serve his nation.", "BrahmÄ?stra Part One: Shiva, also known as BrahmÄ?stra, is an upcoming Indian Hindi-language fantasy adventure film written and directed by Ayan Mukerji, and produced by Karan Johar. It stars Amitabh Bachchan, Ranbir Kapoor, Alia Bhatt, Mouni Roy and Nagarjuna Akkineni.", "The heroism of the fearless King Prithviraj Chauhan as he faces off against Muhammad of Ghor.", "Alisha runs her own yoga studio while seeking investors to back her yoga phone app. Flashbacks reveal a wealthy and idyllic childhood with extended family. For reasons she can't understand, her father dragged her and her mother away from that happiness into a life of isolation and need, which somehow led to her mother's suicide. All of that is the backdrop to an affair Alisa begins with her cousin Tia's fiancÃ©, who is a go-getter real estate whiz kid who seems to have money to burn.", "A vigilante is sent on a mission by the government to kill enemy troops. However, things go wrong when he's mistaken for the leader of the troops.", "Young Ganga is tricked by her boyfriend with the promise of a film career and persuaded to leave the countryside for Mumbai. In Mumbai her dreams of a film career come crashing down and she is lured to the underworld.", "Bhool Bhulaiyaa 2 is an upcoming Indian Hindi-language comedy horror film directed by Anees Bazmee and produced by Bhushan Kumar. It is a standalone sequel to Priyadarshan's 2007 iconic horror comedy Bhool Bhulaiyaa. Bhool Bhulaiyaa 2 stars Kartik Aaryan, Tabu and Kiara Advani. The filming began on 9 October 2019.", "A budding director tries to research a merciless gangster to make a film on gangster life, but his secret attempts to conduct the research fail when he gets caught for snooping.", "The Kashmir Files is a heart wrenching narrative of the pain, suffering, struggle & trauma of Kashmiri Pandits, seen through the eyes of Krishna, the protagonist. The film questions eye-opening facts about democracy, religion, politics and humanity."};
         int stream;
         for (stream = 0; stream < Stream.length; stream++) {
             System.out.printf("%2d. %1s%n", stream + 1, Stream[stream]);
+        }
+        System.out.println("Select the movie according to the sl. no.");
+        int stre = Integer.parseInt(en.readLine());
+        double str = (int) (Math.random()*1000);
+        System.out.println("Date and time: " + aa.getTime());
+        System.out.println("                Book my Seat Streams");
+        System.out.println("-------------------------------------------------------------");
+        System.out.println("Movie Name: " + Stream[stre-1]);
+        System.out.println("Description: " + Dess[stre-1]);
+        System.out.println("Cost: Rs." + str);
+        System.out.println("                   PAYMENTS");
+        System.out.println("***********************************************");
+        System.out.println("Choose a payment option:");
+        System.out.println("1.Debit/Credit Card");
+        System.out.println("2.Net-banking");
+        System.out.println("3.UPI");
+        System.out.println("4.Wallets");
+        pay = Integer.parseInt(en.readLine());
+        switch (pay) {
+            case 1:
+                long card;
+                int cvv;
+                int otp;
+                System.out.println("You have chosen payment through Debit/Credit card");
+                do {
+                    System.out.println("Please enter the 16 digits card number");
+                    card = Long.parseLong(en.readLine());
+                } while (1000000000000000L >= card || card >= 9999999999999999L);
+                do {
+                    System.out.println("Please enter the 3 digit cvv number");
+                    cvv = Integer.parseInt(en.readLine());
+                } while (100 >= cvv || cvv >= 999);
+                do {
+                    System.out.println("Please enter the 4 digit OTP which has been sent to your phone.");
+                    otp = Integer.parseInt(en.readLine());
+                } while (1000 >= otp || otp >= 9999);
+                System.out.println("Verifying>>>>>>>>>>>>>>>>>>>>");
+                System.out.println("Verified");
+                System.out.println(" ");
+                System.out.println("Payment through Card no. " + card);
+                System.out.println("You have successfully paid Rs." + str + " through Credit/Debit Card");
+                int id = (int) Math.round(Math.random() * 1000);
+                int id1 = (int) Math.round(Math.random() * 100);
+                System.out.println("Payment reference no :CRD" + id + "DB" + id1 + "CD");
+                break;
+            case 2:
+                String users;
+                String passs;
+                System.out.println("You have chosen payment through Net Banking");
+                do {
+                    System.out.println("Please enter your username");
+                    user = en.readLine();
+                } while (user == null);
+                do {
+                    System.out.println("Please enter your password");
+                    pass = en.readLine();
+                } while (pass == null);
+                do {
+                    System.out.println("Please enter the 4 digit OTP which has been sent to your phone.");
+                    otp = Integer.parseInt(en.readLine());
+                } while (1000 >= otp || otp >= 9999);
+                System.out.println("Verifying>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+                System.out.println("Verified");
+                System.out.println(" ");
+                System.out.println("Payment through " + user);
+                System.out.println("You have successfully paid Rs." + str + " through Net Banking");
+                int id2 = (int) Math.round(Math.random() * 1000);
+                int id3 = (int) Math.round(Math.random() * 100);
+                System.out.println("Payment reference no :NT" + id2 + "BNK" + id3 + "UP");
+                break;
+            case 3:
+                String upi;
+                long pin;
+                System.out.println("You have chosen payment through UPI\n");
+                do {
+                    System.out.println("Please enter your UPI ID\nYour UPI ID should be in the format of **********@upi\n");
+                    upi = en.readLine();
+                } while (upi == null);
+                do {
+                    System.out.println("Please enter your 6 digit UPI pin");
+                    pin = Long.parseLong(en.readLine());
+                } while (100000 >= pin || pin >= 999999);
+                System.out.println("Verifying>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+                System.out.println("Verified");
+                System.out.println(" ");
+                System.out.println("Payment through " + upi);
+                System.out.println("You have successfully paid Rs." + str + " through UPI");
+                int id4 = (int) Math.round(Math.random() * 1000);
+                int id5 = (int) Math.round(Math.random() * 100);
+                System.out.println("Payment reference no :UPI" + id4 + "@" + id5 + "/y");
+                break;
+            case 4:
+                int wallet;
+                String Wallet;
+                long phone;
+                System.out.println("You have chosen payment through Digital Wallets.");
+                System.out.println("Choose the wallet of your choice.");
+                System.out.println(" ");
+                System.out.println("                    WALLETS");
+                System.out.println("**********************************************");
+                System.out.println("Choose a Digital Wallet:");
+                System.out.println("1.PhonePe");
+                System.out.println("2.G Pay(Google Pay)");
+                System.out.println("3.PayTM");
+                System.out.println("4.BharatPe");
+                System.out.println("5.Amazon Pay");
+                wallet = Integer.parseInt(en.readLine());
+                switch (wallet) {
+                    case 1:
+                        Wallet = "PhonePe";
+                        break;
+                    case 2:
+                        Wallet = "G Pay(Google Pay)";
+                        break;
+                    case 3:
+                        Wallet = "PayTM";
+                        break;
+                    case 4:
+                        Wallet = "BharatPe";
+                        break;
+                    case 5:
+                        Wallet = "Amazon Pay";
+                        break;
+                    default:
+                        throw new IllegalStateException("Unexpected value: " + wallet);
+                }
+                System.out.println("You have chosen " + Wallet + " Wallet");
+                System.out.println("Enter the phone number from which you have registered in " + Wallet);
+                do {
+                    System.out.println("Please enter your phone number");
+                    phone = Long.parseLong(en.readLine());
+                } while (1000000000 >= phone || phone >= 9999999999L);
+                do {
+                    System.out.println("Please enter the 4 digit OTP which has been sent to your phone.");
+                    otp = Integer.parseInt(en.readLine());
+                } while (1000 >= otp || otp >= 9999);
+                System.out.println("Verifying>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+                System.out.println("Verified");
+                System.out.println(" ");
+                System.out.println("Payment through " + Wallet);
+                System.out.println("You have successfully paid Rs." + str + " through Digital Wallet");
+                int id6 = (int) Math.round(Math.random() * 1000);
+                int id7 = (int) Math.round(Math.random() * 100);
+                System.out.println("Payment reference no :DGT" + id6 + "WLT" + id7 + "Pec");
+                break;
+            default:
+                throw new IllegalStateException("Unexpected value: " + pay);
         }
     }
     public void Music_Shows () throws IOException{
