@@ -804,6 +804,108 @@ public class book_my_seat
         String[] venue = {"Venue to be announced", "Venue to be announced", "Phoenix Marketcity, Whitefield", "GYLT:Bengaluru", "GYLT:Bengaluru", "Chowdiyah Memorial Hall", "Nimhans Convention Center", "Sutra: The Lalit Ashok", "Jawaharlal Nehru Stadium, Delhi", "Tribal Adventure Cafe, Bengaluru", "Bhartiya Mall, Bengaluru", "Sutra: The Lalit Ashok", "Hard Rock Cafe, Bengaluru", "Kitty Ko, The Lalit Ashok, Bengaluru", "Venue to Announced", "Ramada by Wyndham, Yelahanka", "Chowdiah Memorial Hall, Bengaluru", "Hard Rock Cafe, Whitefield"};
         int[] cost$ = {999, 2360, 499, 499, 999, 399, 450, 1000, 4000, 1499, 499, 1000, 750, 499, 999, 2499, 350, 750};
     }
+    public void Sports () throws IOException {
+        Calendar aa = Calendar.getInstance();
+        System.out.println("\fDate and time: " + aa.getTime());
+        System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+        System.out.println(" ");
+        System.out.println("                            BBBBBB      OOOO      OOOO    KK  KK            MMM      MMM  YY    YY             SSSSSSS  EEEEEEEE      AA      TTTTTTTTTT   ");
+        System.out.println("                            BB   BB   OO    OO  OO    OO  KK KK             MM MM  MM MM   YY  YY             SS        EE           AA AA        TT       ");
+        System.out.println("                            BBBBBB    OO    OO  OO    OO  KKKK              MM  MM MM MM    YYYY               SSSSSSS  EEEEEEE     AA   AA       TT       ");
+        System.out.println("                            BB   BB   OO    OO  OO    OO  KK KK             MM    M   MM     YY                      SS EE         AAAAAAAAA      TT       ");
+        System.out.println("                            BBBBBB      OOOO      OOOO    KK  KK            MM        MM     YY                SSSSSSS  EEEEEEEE  AA       AA     TT       ");
+        System.out.println("                                                                                THINK IT SEE IT");
+        System.out.println("                                                                        FIND BEST PRICES ON MOVIE TICKETS");
+        System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+        String pass;
+        String user;
+        System.out.println("Enter Username");
+        user = en.readLine();
+        System.out.println("Enter Password:");
+        pass = en.readLine();
+        system.out.println("Select the sports you want to watch");
+        int[] od = {1,2,3,4,5,6,7};
+        String[] Sports = {"E-Sports","Football","Cricket","Archery","Badminton","Basketball","Chess","Golf","Running","Cycling","Tennies"};
+        int sp;
+        for(sp=0;sp< Sports.length;sp++){
+            System.out.printf();
+        }
+        int chosse = Integer.parseInt(en.readLine());
+        switch (chosse){
+            case 1:
+                System.out.println("E-Sports");
+                system.out.println("Select the E-Sports you want to watch");
+                int[] es = {1,2,3,4,5,6,7};
+                String[] ESports = {"Free Fire Solo And Squad (Bermuda)","Call of Duty Mobile Tournament","Online Game - Lost Treasure of Sundarban","Online Game - Flight 9032 Murder Mystery","The Covid Lab - An Online Escape Rooms Experience","Who`s the Killer - An Online Murder Mystery","Johnson Call Of Duty Mobile Tournament","Indian Chess League 2022"};
+                int ec = Integer.parseInt(en.readLine());
+                if(ec == 1){
+                    System.out.println("you have chosen - 'Free Fire Solo And Squad (Bermuda)'");
+                    System.out.println();}
+                else if(ec == 2){
+                    System.out.println("you have chosen - 'Call of Duty Mobile Tournament'");
+                    System.out.println();}
+                else if(ec == 3){
+                    System.out.println("you have chosen - 'COnline Game - Lost Treasure of Sundarban'");
+                    System.out.println();}
+                else if(ec == 4){
+                    System.out.println("you have chosen - 'Online Game - Flight 9032 Murder Mystery'");
+                    System.out.println();}
+                else if(ec == 5){
+                    System.out.println("you have chosen - 'The Covid Lab - An Online Escape Rooms Experience'");
+                    System.out.println();}
+                else if(ec == 6){
+                    System.out.println("you have chosen - 'Who`s the Killer - An Online Murder Mystery'");
+                    System.out.println();}
+                else if(ec == 7){
+                    System.out.println("you have chosen - 'Johnson Call Of Duty Mobile Tournament'");
+                    System.out.println();}
+                else if(ec == 8){
+                    System.out.println("you have chosen - 'Indian Chess League 2022'");
+                    System.out.println();}
+                break;
+            case 2:
+                System.out.println("Football");
+                int[] fb = {1,2,3,4,5,6,7};
+                system.out.println("Select the Football match you want to watch");
+                String[] Football = {"Bologna |vs| Monza","Barcelona |vs| Viktoria PLazen","Napoli |vs| Liverpool","Manchester city |vs| Milan","Manchester united |vs| Aston villa","Argentina |vs| Italy","Germany |vs| Brazil","Russia (USSR) |vs| England"};
+                if(fc == 1){
+                    System.out.println("you have chosen - 'Bologna |vs| Monza'");
+                    System.out.println();}
+                else if(fc == 2){
+                    System.out.println("you have chosen - 'Barcelona |vs| Viktoria PLazen'");
+                    System.out.println();}
+                else if(fc == 3){
+                    System.out.println("you have chosen - 'Napoli |vs| Liverpool'");
+                    System.out.println();}
+                else if(fc == 4){
+                    System.out.println("you have chosen - 'Manchester city |vs| Milan'");
+                    System.out.println();}
+                else if(fc == 5){
+                    System.out.println("you have chosen - 'Manchester united |vs| Aston villa'");
+                    System.out.println();}
+                else if(fc == 6){
+                    System.out.println("you have chosen - 'Argentina |vs| Italy'");
+                    System.out.println();}
+                else if(fc == 7){
+                    System.out.println("you have chosen - 'Germany |vs| Brazil'");
+                    System.out.println();}
+                else if(fc == 8){
+                    System.out.println("you have chosen - 'Russia (USSR) |vs| England'");
+                    System.out.println();}
+                break;
+            break;
+            case 3:
+                ;
+                break;
+            case 4:
+                ;
+                break;
+            case 5:
+                ;
+                break;
+            default:
+        }
+    }
     public void Thanking () {
         System.out.println("\f");
         System.out.println("            THANK YOU FOR BOOKING TICKETS ON BOOK MY SEAT               ");
