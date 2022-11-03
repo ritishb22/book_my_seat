@@ -844,28 +844,36 @@ public class book_my_seat
                 int ec = Integer.parseInt(en.readLine());
                 if(ec == 1){
                     System.out.println("you have chosen - 'Free Fire Solo And Squad (Bermuda)'");
-                    System.out.println();}
+                    System.out.println();
+                }
                 else if(ec == 2){
                     System.out.println("you have chosen - 'Call of Duty Mobile Tournament'");
-                    System.out.println();}
+                    System.out.println();
+                }
                 else if(ec == 3){
                     System.out.println("you have chosen - 'COnline Game - Lost Treasure of Sundarban'");
-                    System.out.println();}
+                    System.out.println();
+                }
                 else if(ec == 4){
                     System.out.println("you have chosen - 'Online Game - Flight 9032 Murder Mystery'");
-                    System.out.println();}
+                    System.out.println();
+                }
                 else if(ec == 5){
                     System.out.println("you have chosen - 'The Covid Lab - An Online Escape Rooms Experience'");
-                    System.out.println();}
+                    System.out.println();
+                }
                 else if(ec == 6){
                     System.out.println("you have chosen - 'Who`s the Killer - An Online Murder Mystery'");
-                    System.out.println();}
+                    System.out.println();
+                }
                 else if(ec == 7){
                     System.out.println("you have chosen - 'Johnson Call Of Duty Mobile Tournament'");
-                    System.out.println();}
+                    System.out.println();
+                }
                 else if(ec == 8){
                     System.out.println("you have chosen - 'Indian Chess League 2022'");
-                    System.out.println();}
+                    System.out.println();
+                }
                 break;
             case 2:
                 System.out.println("Football");
@@ -878,28 +886,36 @@ public class book_my_seat
                 int fc = Integer.parseInt(en.readLine());
                 if(fc == 1){
                     System.out.println("you have chosen - 'Bologna |vs| Monza'");
-                    System.out.println();}
+                    System.out.println();
+                }
                 else if(fc == 2){
                     System.out.println("you have chosen - 'Barcelona |vs| Viktoria PLazen'");
-                    System.out.println();}
+                    System.out.println();
+                }
                 else if(fc == 3){
                     System.out.println("you have chosen - 'Napoli |vs| Liverpool'");
-                    System.out.println();}
+                    System.out.println();
+                }
                 else if(fc == 4){
                     System.out.println("you have chosen - 'Manchester city |vs| Milan'");
-                    System.out.println();}
+                    System.out.println();
+                }
                 else if(fc == 5){
                     System.out.println("you have chosen - 'Manchester united |vs| Aston villa'");
-                    System.out.println();}
+                    System.out.println();
+                }
                 else if(fc == 6){
                     System.out.println("you have chosen - 'Argentina |vs| Italy'");
-                    System.out.println();}
+                    System.out.println();
+                }
                 else if(fc == 7){
                     System.out.println("you have chosen - 'Germany |vs| Brazil'");
-                    System.out.println();}
+                    System.out.println();
+                }
                 else if(fc == 8){
                     System.out.println("you have chosen - 'Russia (USSR) |vs| England'");
-                    System.out.println();}
+                    System.out.println();
+                }
                 break;
             case 3:
                 ;
