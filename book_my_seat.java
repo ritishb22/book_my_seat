@@ -53,6 +53,8 @@ public class book_my_seat
                 obj.Stream();
             if(ct == 3)
                 obj.Music_Shows();
+            if(ct == 4)
+                obj.Sports();
             T+=1;
             System.out.println("do you want to book again ? (yes/no)");
             again = kk.readLine();
@@ -834,7 +836,7 @@ public class book_my_seat
         switch (chosse){
             case 1:
                 System.out.println("E-Sports");
-                system.out.println("Select the E-Sports you want to watch");
+                System.out.println("Select the E-Sports you want to watch");
                 int[] es = {1,2,3,4,5,6,7};
                 String[] ESports = {"Free Fire Solo And Squad (Bermuda)","Call of Duty Mobile Tournament","Online Game - Lost Treasure of Sundarban","Online Game - Flight 9032 Murder Mystery","The Covid Lab - An Online Escape Rooms Experience","Who`s the Killer - An Online Murder Mystery","Johnson Call Of Duty Mobile Tournament","Indian Chess League 2022"};
                 int ec = Integer.parseInt(en.readLine());
@@ -866,7 +868,7 @@ public class book_my_seat
             case 2:
                 System.out.println("Football");
                 int[] fb = {1,2,3,4,5,6,7};
-                system.out.println("Select the Football match you want to watch");
+                System.out.println("Select the Football match you want to watch");
                 String[] Football = {"Bologna |vs| Monza","Barcelona |vs| Viktoria PLazen","Napoli |vs| Liverpool","Manchester city |vs| Milan","Manchester united |vs| Aston villa","Argentina |vs| Italy","Germany |vs| Brazil","Russia (USSR) |vs| England"};
                 if(fc == 1){
                     System.out.println("you have chosen - 'Bologna |vs| Monza'");
