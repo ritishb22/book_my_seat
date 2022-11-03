@@ -830,7 +830,7 @@ public class book_my_seat
         String[] Sports = {"E-Sports","Football","Cricket","Archery","Badminton","Basketball","Chess","Golf","Running","Cycling","Tennies"};
         int sp;
         for(sp=0;sp< Sports.length;sp++){
-            System.out.printf();
+            System.out.printf("2s% 2d%", od, Sports);
         }
         int chosse = Integer.parseInt(en.readLine());
         switch (chosse){
@@ -896,7 +896,6 @@ public class book_my_seat
                     System.out.println("you have chosen - 'Russia (USSR) |vs| England'");
                     System.out.println();}
                 break;
-            break;
             case 3:
                 ;
                 break;
