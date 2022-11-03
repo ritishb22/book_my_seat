@@ -825,7 +825,7 @@ public class book_my_seat
         user = en.readLine();
         System.out.println("Enter Password:");
         pass = en.readLine();
-        system.out.println("Select the sports you want to watch");
+        System.out.println("Select the sports you want to watch");
         int[] od = {1,2,3,4,5,6,7};
         String[] Sports = {"E-Sports","Football","Cricket","Archery","Badminton","Basketball","Chess","Golf","Running","Cycling","Tennies"};
         int sp;
