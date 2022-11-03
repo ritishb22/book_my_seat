@@ -837,8 +837,10 @@ public class book_my_seat
             case 1:
                 System.out.println("E-Sports");
                 System.out.println("Select the E-Sports you want to watch");
-                int[] es = {1,2,3,4,5,6,7};
                 String[] ESports = {"Free Fire Solo And Squad (Bermuda)","Call of Duty Mobile Tournament","Online Game - Lost Treasure of Sundarban","Online Game - Flight 9032 Murder Mystery","The Covid Lab - An Online Escape Rooms Experience","Who`s the Killer - An Online Murder Mystery","Johnson Call Of Duty Mobile Tournament","Indian Chess League 2022"};
+                for(int es = 0; es<ESports.length ; es++){
+                    System.out.printf("%2s %2s%n", es+1, ESports[es]);
+                }
                 int ec = Integer.parseInt(en.readLine());
                 if(ec == 1){
                     System.out.println("you have chosen - 'Free Fire Solo And Squad (Bermuda)'");
@@ -870,6 +872,9 @@ public class book_my_seat
                 int[] fb = {1,2,3,4,5,6,7};
                 System.out.println("Select the Football match you want to watch");
                 String[] Football = {"Bologna |vs| Monza","Barcelona |vs| Viktoria PLazen","Napoli |vs| Liverpool","Manchester city |vs| Milan","Manchester united |vs| Aston villa","Argentina |vs| Italy","Germany |vs| Brazil","Russia (USSR) |vs| England"};
+                for(int es = 0; es<Football.length ; es++){
+                    System.out.printf("%2s %2s%n", es+1, Football[es]);
+                }
                 int fc = Integer.parseInt(en.readLine());
                 if(fc == 1){
                     System.out.println("you have chosen - 'Bologna |vs| Monza'");
