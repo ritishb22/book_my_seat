@@ -53,7 +53,7 @@ public class book_my_seat
                 obj.Stream();
             if(ct == 3)
                 obj.Music_Shows();
-            if(ct == 4)
+            if(ct == 5)
                 obj.Sports();
             T+=1;
             System.out.println("do you want to book again ? (yes/no)");
@@ -826,11 +826,11 @@ public class book_my_seat
         System.out.println("Enter Password:");
         pass = en.readLine();
         System.out.println("Select the sports you want to watch");
-        int[] od = {1,2,3,4,5,6,7};
+        int[] od = {1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 10 , 11};
         String[] Sports = {"E-Sports","Football","Cricket","Archery","Badminton","Basketball","Chess","Golf","Running","Cycling","Tennies"};
         int sp;
         for(sp=0;sp< Sports.length;sp++){
-            System.out.printf("2s% 2d%", od, Sports);
+            System.out.printf("%2s %2s%n", od[sp], Sports[sp]);
         }
         int chosse = Integer.parseInt(en.readLine());
         switch (chosse){
