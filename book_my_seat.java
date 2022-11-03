@@ -870,6 +870,7 @@ public class book_my_seat
                 int[] fb = {1,2,3,4,5,6,7};
                 System.out.println("Select the Football match you want to watch");
                 String[] Football = {"Bologna |vs| Monza","Barcelona |vs| Viktoria PLazen","Napoli |vs| Liverpool","Manchester city |vs| Milan","Manchester united |vs| Aston villa","Argentina |vs| Italy","Germany |vs| Brazil","Russia (USSR) |vs| England"};
+                int fc = Integer.parseInt(en.readLine());
                 if(fc == 1){
                     System.out.println("you have chosen - 'Bologna |vs| Monza'");
                     System.out.println();}
