@@ -990,7 +990,7 @@ public class book_my_seat
         double cmd = (int) (Math.random()*1000);
         System.out.println("Date and time: " + aa.getTime());
         System.out.println("                Book my Seat Streams");
-        System.out.println("-------------------------------------------------------------");
+        System.out.println("------------------------------------------------------------");
         System.out.println("Comedy Show Name: " + Comedy[comdy-1]);
         System.out.println("Venue: " + venue[comdy-1]);
         System.out.println("Cost: Rs." + costc$);
