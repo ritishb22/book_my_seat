@@ -784,8 +784,9 @@ public class book_my_seat
             default:
                 throw new IllegalStateException("Unexpected value: " + pay);
         }
+        obj.Thanking();
     }
-     public void Music_Shows () throws IOException{
+     public void Music_Shows () throws IOException {
          Calendar aa = Calendar.getInstance();
          System.out.println("\fDate and time: " + aa.getTime());
          System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
@@ -819,7 +820,7 @@ public class book_my_seat
          System.out.println("-------------------------------------------------------------");
          System.out.println("Music Show Name: " + Music[misc-1]);
          System.out.println("Venue: " + venue[misc-1]);
-         System.out.println("Cost: Rs." + costm$);
+         System.out.println("Cost: Rs." + costm$[misc-1]);
          System.out.println("                   PAYMENTS");
          System.out.println("***********************************************");
          System.out.println("Choose a payment option:");
@@ -958,8 +959,9 @@ public class book_my_seat
              default:
              throw new IllegalStateException("Unexpected value: " + pay);
          }
+         obj.Thanking();
      }
-    public void Comedy_Shows () throws IOException{
+    public void Comedy_Shows () throws IOException {
         Calendar aa = Calendar.getInstance();
         System.out.println("\fDate and time: " + aa.getTime());
         System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
@@ -991,9 +993,9 @@ public class book_my_seat
         System.out.println("Date and time: " + aa.getTime());
         System.out.println("                Book my Seat Streams");
         System.out.println("-------------------------------------------------------------");
-        System.out.println("Comedy Show Name: " + Comedy[comdy-1]);
-        System.out.println("Venue: " + venue[comdy-1]);
-        System.out.println("Cost: Rs." + costc$);
+        System.out.println("Comedy Show Name: " + Comedy [comdy-1]);
+        System.out.println("Venue: " + venue [comdy-1]);
+        System.out.println("Cost: Rs." + costc$ [comdy-1]);
         System.out.println("                   PAYMENTS");
         System.out.println("***********************************************");
         System.out.println("Choose a payment option:");
@@ -1132,9 +1134,9 @@ public class book_my_seat
             default:
                 throw new IllegalStateException("Unexpected value: " + pay);
         }
+        obj.Thanking();
     }
-    public void Sports () throws IOException
-    {
+    public void Sports () throws IOException {
         Calendar aa = Calendar.getInstance();
         System.out.println("\fDate and time: " + aa.getTime());
         System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
@@ -1178,7 +1180,7 @@ public class book_my_seat
                     System.out.println("you have chosen - 'Call of Duty Mobile Tournament'");
                     System.out.println();
                 } else if (ec == 3){
-                    System.out.println("you have chosen - 'COnline Game - Lost Treasure of Sundarban'");
+                    System.out.println("you have chosen - 'Online Game - Lost Treasure of Sundarban'");
                     System.out.println();
                 } else if (ec == 4){
                     System.out.println("you have chosen - 'Online Game - Flight 9032 Murder Mystery'");
@@ -1268,10 +1270,52 @@ public class book_my_seat
                 }
             break;
             case 4:
+                System.out.println("Archery");
+                int[] ar = {1, 2, 3, 4, 5, 6, 7};
+                System.out.println("Select the Archery match you want to watch");
+                String[] archery = {"India |vs| Japan", "Indonesia |vs| Denmark", "Malaysia |vs| Cannada", "China |vs| Singapore", "South korea |vs| Thailand", "Hong Kong |vs| Ierland", "Russia |vs| Uganda", "Bulgaria |vs| Wales"};
+                for (int es = 0; es < archery.length; es++) {
+                    System.out.printf("%2s %2s%n", es + 1, archery[es]);
+                }
+                int arch = Integer.parseInt(en.readLine());
+                if (arch == 1) {
+                    System.out.println("you have chosen - 'India |vs| Japan'");
+                    System.out.println();
+                } 
+                else if (arch == 2) {
+                    System.out.println("you have chosen - 'Indonesia |vs| Denmark'");
+                    System.out.println();
+                } 
+                else if (arch == 3) {
+                    System.out.println("you have chosen - 'Malaysia |vs| Cannada'");
+                    System.out.println();
+                } 
+                else if (arch == 4) {
+                    System.out.println("you have chosen - 'China |vs| Singapore'");
+                    System.out.println();
+                } 
+                else if (arch == 5) {
+                    System.out.println("you have chosen - 'South korea |vs| Thailand'");
+                    System.out.println();
+                } 
+                else if (arch == 6) {
+                    System.out.println("you have chosen - 'Hong Kong |vs| Ierland'");
+                    System.out.println();
+                } 
+                else if (arch == 7) {
+                    System.out.println("you have chosen - 'Russia |vs| Uganda'");
+                    System.out.println();
+                } 
+                else if (arch == 8) {
+                    System.out.println("you have chosen - 'Bulgaria |vs| Wales'");
+                    System.out.println();
+                }
+            break;
+            case 5:
                 System.out.println("Badminton");
                 int[] bd = {1, 2, 3, 4, 5, 6, 7};
                 System.out.println("Select the Badminton match you want to watch");
-                String[] Badminton = {"", "", "", "", "", "", "", ""};
+                String[] Badminton = {"India |vs| Japan", "Indonesia |vs| Denmark", "Malaysia |vs| Cannada", "China |vs| Singapore", "South korea |vs| Thailand", "Hong Kong |vs| Ierland", "Russia |vs| Uganda", "Bulgaria |vs| Wales"};
                 for (int es = 0; es < Badminton.length; es++) {
                     System.out.printf("%2s %2s%n", es + 1, Badminton[es]);
                 }
@@ -1279,30 +1323,37 @@ public class book_my_seat
                 if (badt == 1) {
                     System.out.println("you have chosen - 'India |vs| Japan'");
                     System.out.println();
-                } else if (badt == 2) {
+                } 
+                else if (badt == 2) {
                     System.out.println("you have chosen - 'Indonesia |vs| Denmark'");
                     System.out.println();
-                } else if (badt == 3) {
+                } 
+                else if (badt == 3) {
                     System.out.println("you have chosen - 'Malaysia |vs| Cannada'");
                     System.out.println();
-                } else if (badt == 4) {
+                } 
+                else if (badt == 4) {
                     System.out.println("you have chosen - 'China |vs| Singapore'");
                     System.out.println();
-                } else if (badt == 5) {
+                } 
+                else if (badt == 5) {
                     System.out.println("you have chosen - 'South korea |vs| Thailand'");
                     System.out.println();
-                } else if (badt == 6) {
+                } 
+                else if (badt == 6) {
                     System.out.println("you have chosen - 'Hong Kong |vs| Ierland'");
                     System.out.println();
-                } else if (badt == 7) {
+                } 
+                else if (badt == 7) {
                     System.out.println("you have chosen - 'Russia |vs| Uganda'");
                     System.out.println();
-                } else if (badt == 8) {
+                } 
+                else if (badt == 8) {
                     System.out.println("you have chosen - 'Bulgaria |vs| Wales'");
                     System.out.println();
                 }
-            break;
-            case 5:
+                break;
+            case 6:
                 System.out.println("Basketball");
                 int[] bb = {1, 2, 3, 4, 5, 6, 7};
                 System.out.println("Select the Basketball match you want to watch");
@@ -1482,6 +1533,7 @@ public class book_my_seat
             default:
                 throw new IllegalStateException("Unexpected value: " + pay);
         }
+        obj.Thanking();
     }
      public void Thanking (){
         System.out.println("\f");
