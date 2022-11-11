@@ -808,103 +808,104 @@ public class book_my_seat
      }
     public void Sports () throws IOException
     {
-         Calendar aa = Calendar.getInstance();
-        System.out.println("\fDate and time:" + aa.getTime());
-        System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-        System.out.println("");
-        System.out.println("                           BBBBBB      OOOO      OOOO    KK  KK            MMM      MMM  YY    YY             SSSSSSS  EEEEEEEE      AA      TTTTTTTTTT   ");
-        System.out.println("                           BB   BB   OO    OO  OO    OO  KK KK             MM MM  MM MM   YY  YY             SS        EE           AA AA        TT       ");
-        System.out.println("                           BBBBBB    OO    OO  OO    OO  KKKK              MM  MM MM MM    YYYY               SSSSSSS  EEEEEEE     AA   AA       TT       ");
-        System.out.println("                           BB   BB   OO    OO  OO    OO  KK KK             MM    M   MM     YY                      SS EE         AAAAAAAAA      TT       ");
-        System.out.println("                           BBBBBB      OOOO      OOOO    KK  KK            MM        MM     YY                SSSSSSS  EEEEEEEE  AA       AA     TT       ");
-        System.out.println("                                                                               THINK IT SEE IT");
-        System.out.println("                                                                       FIND BEST PRICES ON MOVIE TICKETS");
-        System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
-         String pass;
-         String user;
-        System.out.println("Enter Username ");
-        user = en.readLine( );
-        System.out.println("Enter Password: ");
-        pass = en.readLine( );
-        System.out.println("Select the sports you want to watch ");
-        int[] od = {1,2,3,4,5,6,7,8,9,10,11};
+        Calendar aa = Calendar.getInstance();
+        System.out.println("\fDate and time: " + aa.getTime());
+        System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+        System.out.println(" ");
+        System.out.println("                          BBBBBB      OOOO      OOOO    KK  KK            MMM      MMM  YY    YY             SSSSSSS  EEEEEEEE      AA      TTTTTTTTTT   ");
+        System.out.println("                          BB   BB   OO    OO  OO    OO  KK KK             MM MM  MM MM   YY  YY             SS        EE           AA AA        TT       ");
+        System.out.println("                          BBBBBB    OO    OO  OO    OO  KKKK              MM  MM MM MM    YYYY               SSSSSSS  EEEEEEE     AA   AA       TT       ");
+        System.out.println("                          BB   BB   OO    OO  OO    OO  KK KK             MM    M   MM     YY                      SS EE         AAAAAAAAA      TT       ");
+        System.out.println("                          BBBBBB      OOOO      OOOO    KK  KK            MM        MM     YY                SSSSSSS  EEEEEEEE  AA       AA     TT       ");
+        System.out.println("                                                                              THINK IT SEE IT");
+        System.out.println("                                                                      FIND BEST PRICES ON MOVIE TICKETS");
+        System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+        String pass;
+        String user;
+        System.out.println("Enter Username");
+        user = en.readLine();
+        System.out.println("Enter Password:");
+        pass = en.readLine();
+        System.out.println("Select the sports you want to watch");
+        int[] od = {1,2,3,4,5,6};
         String[] Sports = {"E-Sports","Football","Cricket","Archery","Badminton","Basketball"};
-         int sp;
-        for( sp=0;sp< Sports.length;sp++){
-            System.out.printf( "%2s %2s%n", od[sp], Sports[sp]);
-         }
-         int chosse = Integer.parseInt(en.readLine());
-        switch (chosse) {
-             case 1:
-                System.out.println(" E-Sports");
-                System.out.println(" Select the E-Sports you want to watch");
-                String[] ESports = {"Free Fire Solo And Squad (Bermuda)", "Call of Duty Mobile Tournament", "Online Game - Lost Treasure of Sundarban", "Online Game - Flight 9032 Murder Mystery", "The Covid Lab - An Online Escape Rooms Experience", "Who`s the Killer - An Online Murder Mystery", "Johnson Call Of Duty Mobile Tournament", "Indian Chess League 2022"};
-                for (int es = 0; es < ESports.length; es++) {
-                    System.out.printf("%2s %2s%n", es + 1, ESports[es]);
-                 }
-                 int ec = Integer.parseInt(en.readLine());
-                if (ec == 1) {
-                     System.out.println("you have chosen - 'Free Fire Solo And Squad (Bermuda)'");
-                     System.out.println();
-                } else if (ec == 2) {
-                     System.out.println("you have chosen - 'Call of Duty Mobile Tournament'");
-                     System.out.println();
-                } else if (ec == 3) {
-                     System.out.println("you have chosen - 'COnline Game - Lost Treasure of Sundarban'");
-                     System.out.println();
-                } else if (ec == 4) {
-                     System.out.println("you have chosen - 'Online Game - Flight 9032 Murder Mystery'");
-                     System.out.println();
-                } else if (ec == 5) {
-                     System.out.println("you have chosen - 'The Covid Lab - An Online Escape Rooms Experience'");
-                     System.out.println();
-                } else if (ec == 6) {
-                     System.out.println("you have chosen - 'Who`s the Killer - An Online Murder Mystery'");
-                     System.out.println();
-                } else if (ec == 7) {
-                     System.out.println("you have chosen - 'Johnson Call Of Duty Mobile Tournament'");
-                     System.out.println();
-                } else if (ec == 8) {
-                     System.out.println("you have chosen - 'Indian Chess League 2022'");
-                     System.out.println();
-                 }
-                 break;
-             case 2:
-                System.out.println("Football ");
-                int[] fb = {1, 2, 3, 4, 5, 6, 7};
-                System.out.println("Select the Football match you want to watch ");
-                String[] Football = {"Bologna |vs| Monza", "Barcelona |vs| Viktoria PLazen", "Napoli |vs| Liverpool", "Manchester city |vs| Milan", "Manchester united |vs| Aston villa", "Argentina |vs| Italy", "Germany |vs| Brazil", "Russia (USSR) |vs| England"};
-                for (int es = 0; es < Football.length; es++) {
-                    System.out.printf("%2s %2s%n", es + 1, Football[es]);
-                 }
-                 int fc = Integer.parseInt(en.readLine());
-                if (fc == 1) {
-                     System.out.println("you have chosen - 'Bologna |vs| Monza'");
-                     System.out.println();
-                } else if (fc == 2) {
-                     System.out.println("you have chosen - 'Barcelona |vs| Viktoria PLazen'");
-                     System.out.println();
-                } else if (fc == 3) {
-                     System.out.println("you have chosen - 'Napoli |vs| Liverpool'");
-                     System.out.println();
-                } else if (fc == 4) {
-                     System.out.println("you have chosen - 'Manchester city |vs| Milan'");
-                     System.out.println();
-                } else if (fc == 5) {
-                     System.out.println("you have chosen - 'Manchester united |vs| Aston villa'");
-                     System.out.println();
-                } else if (fc == 6) {
-                     System.out.println("you have chosen - 'Argentina |vs| Italy'");
-                     System.out.println();
-                } else if (fc == 7) {
-                     System.out.println("you have chosen - 'Germany |vs| Brazil'");
-                     System.out.println();
-                } else if (fc == 8) {
+        int sp;
+        for(sp=0;sp< Sports.length;sp++){
+            System.out.printf("%2s %2s%n", od[sp], Sports[sp]);
+          }
+        int chosse = Integer.parseInt(en.readLine());
+        switch (chosse){
+            case 1:
+                System.out.println("E-Sports");
+                int[] Es = {1,2,3,4,5,6,7};
+                System.out.println("Select the E-Sports you want to watch");
+                String[] ESports = { "Free Fire Solo And Squad (Bermuda)", "Call of Duty Mobile Tournament", "Online Game - Lost Treasure of Sundarban", "Online Game - Flight 9032 Murder Mystery", "The Covid Lab - An Online Escape Rooms Experience", "Who`s the Killer - An Online Murder Mystery", "Johnson Call Of Duty Mobile Tournament", "Indian Chess League 2022"};
+                for (int es = 0; es < ESports.length; es++){
+                    System.out.printf("%2s %2s%n", es + 1, ESports[es] );
+                    }
+                    int ec = Integer.parseInt(en.readLine());
+                if (ec == 1){
+                    System.out.println("you have chosen - 'Free Fire Solo And Squad (Bermuda)'");
+                    System.out.println();
+                } else if (ec == 2){
+                    System.out.println("you have chosen - 'Call of Duty Mobile Tournament'");
+                    System.out.println();
+                } else if (ec == 3){
+                    System.out.println("you have chosen - 'COnline Game - Lost Treasure of Sundarban'");
+                    System.out.println();
+                } else if (ec == 4){
+                    System.out.println("you have chosen - 'Online Game - Flight 9032 Murder Mystery'");
+                    System.out.println();
+                } else if (ec == 5){
+                    System.out.println("you have chosen - 'The Covid Lab - An Online Escape Rooms Experience'");
+                    System.out.println();
+                } else if (ec == 6){
+                    System.out.println("you have chosen - 'Who`s the Killer - An Online Murder Mystery'");
+                    System.out.println();
+                } else if (ec == 7){
+                    System.out.println("you have chosen - 'Johnson Call Of Duty Mobile Tournament'");
+                    System.out.println();
+                } else if (ec == 8){
+                    System.out.println("you have chosen - 'Indian Chess League 2022'");
+                    System.out.println();
+                   }
+            break;
+            case 2:
+                System.out.println("Football");
+                int[] fb = {1,2,3,4,5,6,7};
+                System.out.println("Select the Football match you want to watch");
+                String[] Football = {"Bologna |vs| Monza","Barcelona |vs| Viktoria PLazen","Napoli |vs| Liverpool","Manchester city |vs| Milan","Manchester united |vs| Aston villa","Argentina |vs| Italy","Germany |vs| Brazil","Russia (USSR) |vs| England"};
+                for (int es = 0; es < Football.length; es++){
+                    System.out.printf("%2s %2s%n",es + 1, Football[es]);
+                   }
+                 int fc = Integer.parseInt(en.readLine() );
+                if (fc == 1){
+                    System.out.println("you have chosen - 'Bologna |vs| Monza'");
+                    System.out.println();
+                } else if (fc == 2){
+                    System.out.println("you have chosen - 'Barcelona |vs| Viktoria PLazen'");
+                    System.out.println();
+                } else if (fc == 3){
+                    System.out.println("you have chosen - 'Napoli |vs| Liverpool'");
+                    System.out.println();
+                } else if (fc == 4){
+                    System.out.println("you have chosen - 'Manchester city |vs| Milan'");
+                    System.out.println();
+                } else if (fc == 5){
+                    System.out.println("you have chosen - 'Manchester united |vs| Aston villa'");
+                    System.out.println();
+                } else if (fc == 6){
+                    System.out.println("you have chosen - 'Argentina |vs| Italy'");
+                    System.out.println();
+                } else if (fc == 7){
+                    System.out.println("you have chosen - 'Germany |vs| Brazil'");
+                    System.out.println();
+                } else if (fc == 8){
                     System.out.println("you have chosen - 'Russia |vs| England'");
-                    System.out.println( );
-                 }
-                 break;
-             case 3:
+                    System.out.println();
+                   }
+            break;
+            case 3:
                 System.out.println("Cricket");
                 int[] ck = {1, 2, 3, 4, 5, 6, 7};
                 System.out.println("Select the Cricket match you want to watch");
@@ -917,7 +918,7 @@ public class book_my_seat
                     System.out.println("you have chosen - 'Ireland |vs| Sri Lanka'");
                     System.out.println();
                 } else if (ckt == 2) {
-                    System.out.println("you have chosen - 'Pakistan |vs| India'");
+                    System.out.println("you have chosen - 'India |vs| Pakistan'");
                     System.out.println();
                 } else if (ckt == 3) {
                     System.out.println("you have chosen - 'Bangladesh |vs| Netherlands'");
@@ -937,9 +938,9 @@ public class book_my_seat
                 } else if (ckt == 8) {
                     System.out.println("you have chosen - 'India |vs| Netherlands'");
                      System.out.println();
-                 }
-                 break;
-             case 4:
+                }
+            break;
+            case 4:
                 System.out.println("Badminton");
                 int[] bd = {1, 2, 3, 4, 5, 6, 7};
                 System.out.println("Select the Badminton match you want to watch");
@@ -949,32 +950,32 @@ public class book_my_seat
                 }
                 int badt = Integer.parseInt(en.readLine());
                 if (badt == 1) {
-                    System.out.println("you have chosen - '|vs|'");
+                    System.out.println("you have chosen - 'India |vs| Japan'");
                     System.out.println();
                 } else if (badt == 2) {
-                    System.out.println("you have chosen - '|vs|'");
+                    System.out.println("you have chosen - 'Indonesia |vs| Denmark'");
                     System.out.println();
                 } else if (badt == 3) {
-                    System.out.println("you have chosen - '|vs|'");
+                    System.out.println("you have chosen - 'Malaysia |vs| Cannada'");
                     System.out.println();
                 } else if (badt == 4) {
-                    System.out.println("you have chosen - '|vs|'");
+                    System.out.println("you have chosen - 'China |vs| Singapore'");
                     System.out.println();
                 } else if (badt == 5) {
-                    System.out.println("you have chosen - '|vs|'");
+                    System.out.println("you have chosen - 'South korea |vs| Thailand'");
                     System.out.println();
                 } else if (badt == 6) {
-                    System.out.println("you have chosen - '|vs|'");
+                    System.out.println("you have chosen - 'Hong Kong |vs| Ierland'");
                     System.out.println();
                 } else if (badt == 7) {
-                    System.out.println("you have chosen - '|vs|'");
+                    System.out.println("you have chosen - 'Russia |vs| Uganda'");
                     System.out.println();
                 } else if (badt == 8) {
-                    System.out.println("you have chosen - '|vs|'");
+                    System.out.println("you have chosen - 'Bulgaria |vs| Wales'");
                     System.out.println();
                 }
-                 break;
-             case 5:
+            break;
+            case 5:
                 System.out.println("Basketball");
                 int[] bb = {1, 2, 3, 4, 5, 6, 7};
                 System.out.println("Select the Basketball match you want to watch");
@@ -1008,24 +1009,167 @@ public class book_my_seat
                     System.out.println("you have chosen - 'Magic |vs| Kings'");
                     System.out.println();
                 }
-                 break;
-               default:
+            break;
+        }
+        double spr = (int) (Math.random()*1000);
+        System.out.println("Date and time: " + aa.getTime());
+        System.out.println("                Book my Seat Sports");
+        System.out.println("Cost: Rs." + spr);
+        System.out.println("                   PAYMENTS");
+        System.out.println("***********************************************");
+        System.out.println("Choose a payment option:");
+        System.out.println("1.Debit/Credit Card");
+        System.out.println("2.Net-banking");
+        System.out.println("3.UPI");
+        System.out.println("4.Wallets");
+        System.out.println("***********************************************");
+        System.out.println("enter the sl. number of the payment method you want to pay with ");
+        pay = Integer.parseInt(en.readLine());
+        switch (pay) {
+            case 1:
+                long card;
+                int cvv;
+                int otp;
+                System.out.println("You have chosen payment through Debit/Credit card");
+                do {
+                    System.out.println("Please enter the 16 digits card number");
+                    card = Long.parseLong(en.readLine());
+                } while (1000000000000000L >= card || card >= 9999999999999999L);
+                do {
+                    System.out.println("Please enter the 3 digit cvv number");
+                    cvv = Integer.parseInt(en.readLine());
+                } while (100 >= cvv || cvv >= 999);
+                do {
+                    System.out.println("Please enter the 4 digit OTP which has been sent to your phone.");
+                    otp = Integer.parseInt(en.readLine());
+                } while (1000 >= otp || otp >= 9999);
+                System.out.println("Verifying>>>>>>>>>>>>>>>>>>>>");
+                System.out.println("Verified");
+                System.out.println(" ");
+                System.out.println("Payment through Card no. " + card);
+                System.out.println("You have successfully paid Rs." + spr + " through Credit/Debit Card");
+                int id = (int) Math.round(Math.random() * 1000);
+                int id1 = (int) Math.round(Math.random() * 100);
+                System.out.println("Payment reference no :CRD" + id + "DB" + id1 + "CD");
+                break;
+            case 2:
+                String users;
+                String passs;
+                System.out.println("You have chosen payment through Net Banking");
+                do {
+                    System.out.println("Please enter your username");
+                    user = en.readLine();
+                } while (user == null);
+                do {
+                    System.out.println("Please enter your password");
+                    pass = en.readLine();
+                } while (pass == null);
+                do {
+                    System.out.println("Please enter the 4 digit OTP which has been sent to your phone.");
+                    otp = Integer.parseInt(en.readLine());
+                } while (1000 >= otp || otp >= 9999);
+                System.out.println("Verifying>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+                System.out.println("Verified");
+                System.out.println(" ");
+                System.out.println("Payment through " + user);
+                System.out.println("You have successfully paid Rs." + spr + " through Net Banking");
+                int id2 = (int) Math.round(Math.random() * 1000);
+                int id3 = (int) Math.round(Math.random() * 100);
+                System.out.println("Payment reference no :NT" + id2 + "BNK" + id3 + "UP");
+                break;
+            case 3:
+                String upi;
+                long pin;
+                System.out.println("You have chosen payment through UPI\n");
+                do {
+                    System.out.println("Please enter your UPI ID\nYour UPI ID should be in the format of **********@upi\n");
+                    upi = en.readLine();
+                } while (upi == null);
+                do {
+                    System.out.println("Please enter your 6 digit UPI pin");
+                    pin = Long.parseLong(en.readLine());
+                } while (100000 >= pin || pin >= 999999);
+                System.out.println("Verifying>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+                System.out.println("Verified");
+                System.out.println(" ");
+                System.out.println("Payment through " + upi);
+                System.out.println("You have successfully paid Rs." + spr + " through UPI");
+                int id4 = (int) Math.round(Math.random() * 1000);
+                int id5 = (int) Math.round(Math.random() * 100);
+                System.out.println("Payment reference no :UPI" + id4 + "@" + id5 + "/y");
+                break;
+            case 4:
+                int wallet;
+                String Wallet;
+                long phone;
+                System.out.println("You have chosen payment through Digital Wallets.");
+                System.out.println("Choose the wallet of your choice.");
+                System.out.println(" ");
+                System.out.println("                    WALLETS");
+                System.out.println("**********************************************");
+                System.out.println("Choose a Digital Wallet:");
+                System.out.println("1.PhonePe");
+                System.out.println("2.G Pay(Google Pay)");
+                System.out.println("3.PayTM");
+                System.out.println("4.BharatPe");
+                System.out.println("5.Amazon Pay");
+                wallet = Integer.parseInt(en.readLine());
+                switch (wallet) {
+                    case 1:
+                        Wallet = "PhonePe";
+                        break;
+                    case 2:
+                        Wallet = "G Pay(Google Pay)";
+                        break;
+                    case 3:
+                        Wallet = "PayTM";
+                        break;
+                    case 4:
+                        Wallet = "BharatPe";
+                        break;
+                    case 5:
+                        Wallet = "Amazon Pay";
+                        break;
+                    default:
+                        throw new IllegalStateException("Unexpected value: " + wallet);
+                }
+                System.out.println("You have chosen " + Wallet + " Wallet");
+                System.out.println("Enter the phone number from which you have registered in " + Wallet);
+                do {
+                    System.out.println("Please enter your phone number");
+                    phone = Long.parseLong(en.readLine());
+                } while (1000000000 >= phone || phone >= 9999999999L);
+                do {
+                    System.out.println("Please enter the 4 digit OTP which has been sent to your phone.");
+                    otp = Integer.parseInt(en.readLine());
+                } while (1000 >= otp || otp >= 9999);
+                System.out.println("Verifying>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+                System.out.println("Verified");
+                System.out.println(" ");
+                System.out.println("Payment through " + Wallet);
+                System.out.println("You have successfully paid Rs." + spr + " through Digital Wallet");
+                int id6 = (int) Math.round(Math.random() * 1000);
+                int id7 = (int) Math.round(Math.random() * 100);
+                System.out.println("Payment reference no :DGT" + id6 + "WLT" + id7 + "Pec");
+                break;
+            default:
+                throw new IllegalStateException("Unexpected value: " + pay);
         }
     }
-     public void Thanking () {
-        System.out.println("\f ");
-        System.out.println("             THANK YOU FOR BOOKING TICKETS ON BOOK MY SEAT               ");
-        System.out.println("                           THINK IT SEE IT                               ");
-        System.out.println("                   FIND BEST PRICES ON MOVIE TICKETS                      ");
-        System.out.println("");
-        System.out.println("  |||||||  ||          /\\     ||||||||          |||||    ||||         //    ");
-        System.out.println("  ||       ||         // \\       ||            ||   // ||    ||  00  //     ");
-        System.out.println("  |||||||  ||        //   \\      ||               //   ||    ||     //      ");
-        System.out.println("  ||       ||       //|||||\\     ||             //     ||    ||    //  00   ");
-        System.out.println("  ||       ||||||| //       \\    ||            |||||||   ||||     //       ");
-        System.out.println("");
-        System.out.println("                        ON YOUR SECOND PURCHASE                          ");
-        System.out.println("");
+     public void Thanking (){
+        System.out.println("\f");
+        System.out.println("            THANK YOU FOR BOOKING TICKETS ON BOOK MY SEAT               ");
+        System.out.println("                          THINK IT SEE IT                               ");
+        System.out.println("                  FIND BEST PRICES ON MOVIE TICKETS                      ");
+        System.out.println(" ");
+        System.out.println(" |||||||  ||          /\\     ||||||||          |||||    ||||         //    ");
+        System.out.println(" ||       ||         // \\       ||            ||   // ||    ||  00  //     ");
+        System.out.println(" |||||||  ||        //   \\      ||               //   ||    ||     //      ");
+        System.out.println(" ||       ||       //|||||\\     ||             //     ||    ||    //  00   ");
+        System.out.println(" ||       ||||||| //       \\    ||            |||||||   ||||     //       ");
+        System.out.println(" ");
+        System.out.println("                         ON YOUR SECOND PURCHASE                          ");
+        System.out.println(" ");
          Calendar aa = Calendar.getInstance();
         System.out.println("Date and time:" + aa.getTime());
      }
