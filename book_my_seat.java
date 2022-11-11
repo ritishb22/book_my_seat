@@ -785,7 +785,7 @@ public class book_my_seat
                 throw new IllegalStateException("Unexpected value: " + pay);
         }
     }
-     public void Music_Shows () throws IOException{
+     public void Music_Shows () throws IOException {
          Calendar aa = Calendar.getInstance();
          System.out.println("\fDate and time: " + aa.getTime());
          System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
@@ -959,7 +959,7 @@ public class book_my_seat
              throw new IllegalStateException("Unexpected value: " + pay);
          }
      }
-    public void Comedy_Shows () throws IOException{
+    public void Comedy_Shows () throws IOException {
         Calendar aa = Calendar.getInstance();
         System.out.println("\fDate and time: " + aa.getTime());
         System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
@@ -1133,8 +1133,7 @@ public class book_my_seat
                 throw new IllegalStateException("Unexpected value: " + pay);
         }
     }
-    public void Sports () throws IOException
-    {
+    public void Sports () throws IOException {
         Calendar aa = Calendar.getInstance();
         System.out.println("\fDate and time: " + aa.getTime());
         System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
