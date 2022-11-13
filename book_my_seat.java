@@ -57,6 +57,8 @@ public class book_my_seat
                 obj.Comedy_Shows();
             if(ct == 5)
                 obj.Sports();
+            if(ct == 6)
+                obj.Plays();
             T+=1;
             System.out.println("do you want to book again ? (yes/no)");
             again = kk.readLine();
@@ -611,24 +613,24 @@ public class book_my_seat
                 throw new IllegalStateException("Unexpected value: " + pay);
         }
     }
-    public void Stream () throws IOException {
+    public void Stream () throws IOException{
         Calendar aa = Calendar.getInstance();
-        System.out.println("\fDate and time: " + aa.getTime());
-        System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-        System.out.println(" ");
-        System.out.println("                            BBBBBB      OOOO      OOOO    KK  KK            MMM      MMM  YY    YY             SSSSSSS  EEEEEEEE      AA      TTTTTTTTTT   ");
-        System.out.println("                            BB   BB   OO    OO  OO    OO  KK KK             MM MM  MM MM   YY  YY             SS        EE           AA AA        TT       ");
-        System.out.println("                            BBBBBB    OO    OO  OO    OO  KKKK              MM  MM MM MM    YYYY               SSSSSSS  EEEEEEE     AA   AA       TT       ");
-        System.out.println("                            BB   BB   OO    OO  OO    OO  KK KK             MM    M   MM     YY                      SS EE         AAAAAAAAA      TT       ");
-        System.out.println("                            BBBBBB      OOOO      OOOO    KK  KK            MM        MM     YY                SSSSSSS  EEEEEEEE  AA       AA     TT       ");
-        System.out.println("                                                                                THINK IT SEE IT");
-        System.out.println("                                                                        FIND BEST PRICES ON MOVIE TICKETS");
-        System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+        System.out.println("\fDate and time: "+ aa.getTime());
+        System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+        System.out.println("");
+        System.out.println("                           BBBBBB      OOOO      OOOO    KK  KK            MMM      MMM  YY    YY             SSSSSSS  EEEEEEEE      AA      TTTTTTTTTT   ");
+        System.out.println("                           BB   BB   OO    OO  OO    OO  KK KK             MM MM  MM MM   YY  YY             SS        EE           AA AA        TT       ");
+        System.out.println("                           BBBBBB    OO    OO  OO    OO  KKKK              MM  MM MM MM    YYYY               SSSSSSS  EEEEEEE     AA   AA       TT       ");
+        System.out.println("                           BB   BB   OO    OO  OO    OO  KK KK             MM    M   MM     YY                      SS EE         AAAAAAAAA      TT       ");
+        System.out.println("                           BBBBBB      OOOO      OOOO    KK  KK            MM        MM     YY                SSSSSSS  EEEEEEEE  AA       AA     TT       ");
+        System.out.println("                                                                               THINK IT SEE IT");
+        System.out.println("                                                                       FIND BEST PRICES ON MOVIE TICKETS");
+        System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
         String pass;
         String user;
-        System.out.println("Enter Username");
+        System.out.println("Enter Username ");
         user = en.readLine();
-        System.out.println("Enter Password:");
+        System.out.println("Enter Password: ");
         pass = en.readLine();
         System.out.println("  Choose the Stream of your Choice\n");
         String[] Stream = {"Top Gun: Maverick", "Fantastic Beasts: The Secrets Of Dumbledore", "Orphan: First Kill (2022)", "Ragdoll (TV Series)", "Unforgotten: Series 1", "Angel", "Memory", "Sherwood: TV Series", "Spider-Man: No Way Home (Movie + Special Extra Content)", "Jurassic World: Dominion","The Hulk","Fantastic Beasts: The Secrets of Dumbledore", "Doctor Strange in the Multiverse of Madness", "Avatar 2", "Thor: Love and Thunder", "Jurassic World Dominion", "Morbius", "Uncharted", "Black Adam", "The Batman", "Black Panther: Wakanda Forever","K.G.F: Chapter 2 (Hindi)", "Attack: Part 1", "Brahmastra", "Prithviraj", "Gehraiyaan", "Heropanti 2", "Gangubai Kathiawadi", "Bhool Bhulayaa 2", "Bacchan Pandey", "The Kashmir Files"};
@@ -785,7 +787,7 @@ public class book_my_seat
                 throw new IllegalStateException("Unexpected value: " + pay);
         }
     }
-     public void Music_Shows () throws IOException {
+    public void Music_Shows () throws IOException{
          Calendar aa = Calendar.getInstance();
          System.out.println("\fDate and time: " + aa.getTime());
          System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
@@ -805,8 +807,7 @@ public class book_my_seat
          System.out.println("Enter Password:");
          pass = en.readLine();
          String[] Music = {"Sunburn Arena ft. DJ SNAKE", "Echoes of Earth Music Festival", "Stebin Ben Live In Concert", "Soundsworth Presents Thaikkudam Bridge at GYLT!", "KOROLOVA", "Morning Ragas-Morning Melodies","Avataran 2022", "Avalon Live in Bangalore", "Justin Bieber Justice World Tour", "Indian Dirt Fest", "OKTOBERFEST Bhartiya Mall of Bengaluru", "Avalon Live in Bangalore", "Tribute to Lucky Ali ft. ECHOS", "Tasnneem (Qilla Records) live at Kitty Ko", "Supermoon ft B Praak King of Hearts Tour- BLR", "Bangalore Open Air 2022", "GOLDEN EVENING", "Tribute to Ed Sheeran & Coldplay ft. Nikhil Vai"};
-         String[] venue = {"Venue to be announced", "Venue to be announced", "Phoenix Marketcity, Whitefield", "GYLT:Bengaluru", "GYLT:Bengaluru", "Chowdiyah Memorial Hall", "Nimhans Convention Center", "Sutra: The Lalit Ashok", "Jawaharlal Nehru Stadium, Delhi", "Tribal Adventure Cafe, Bengaluru", "Bhartiya Mall, Bengaluru", "Sutra: The Lalit Ashok", "Hard Rock Cafe, Bengaluru", "Kitty Ko, The Lalit Ashok, Bengaluru", "Venue to Announced", "Ramada by Wyndham, Yelahanka", "Chowdiah Memorial Hall, Bengaluru", "Hard Rock Cafe, Whitefield"};
-         int[] costm$ = {999, 2360, 499, 499, 999, 399, 450, 1000, 4000, 1499, 499, 1000, 750, 499, 999, 2499, 350, 750};
+         String[] venue = {"Venue to be announced","Venue to be announced", "Phoenix Marketcity, Whitefield", "GYLT:Bengaluru", "GYLT:Bengaluru", "Chowdiyah Memorial Hall", "Nimhans Convention Center", "Sutra: The Lalit Ashok", "Jawaharlal Nehru Stadium, Delhi", "Tribal Adventure Cafe, Bengaluru", "Bhartiya Mall, Bengaluru", "Sutra: The Lalit Ashok", "Hard Rock Cafe, Bengaluru", "Kitty Ko, The Lalit Ashok, Bengaluru", "Venue to Announced", "Ramada by Wyndham, Yelahanka", "Chowdiah Memorial Hall, Bengaluru", "Hard Rock Cafe, Whitefield"};
          int shows;
          for (shows = 0; shows < Music.length; shows++) {
              System.out.printf("%2d. %1s%n", shows + 1, Music[shows]);
@@ -819,7 +820,7 @@ public class book_my_seat
          System.out.println("-------------------------------------------------------------");
          System.out.println("Music Show Name: " + Music[misc-1]);
          System.out.println("Venue: " + venue[misc-1]);
-         System.out.println("Cost: Rs." + costm$);
+         System.out.println("Cost: Rs." + msc);
          System.out.println("                   PAYMENTS");
          System.out.println("***********************************************");
          System.out.println("Choose a payment option:");
@@ -958,7 +959,7 @@ public class book_my_seat
              default:
              throw new IllegalStateException("Unexpected value: " + pay);
          }
-     }
+   }
     public void Comedy_Shows () throws IOException {
         Calendar aa = Calendar.getInstance();
         System.out.println("\fDate and time: " + aa.getTime());
@@ -980,20 +981,19 @@ public class book_my_seat
         pass = en.readLine();
         String[] Comedy = {"", "", "", "", "", "","", "", "", ""};
         String[] venue = {"Phoenix Marketcity, Whitefield", "GYLT:Bengaluru", "GYLT:Bengaluru", "Chowdiyah Memorial Hall", "Nimhans Convention Center", "Sutra: The Lalit Ashok","Tribal Adventure Cafe, Bengaluru", "Bhartiya Mall, Bengaluru", "Sutra: The Lalit Ashok", "Hard Rock Cafe, Bengaluru"};
-        int[] costc$ = {199, 260, 149, 209, 179, 139, 150, 190, 200, 140};
         int shows;
         for (shows = 0; shows < Comedy.length; shows++) {
             System.out.printf("%2d. %1s%n", shows + 1,Comedy[shows]);
         }
         System.out.println("Select the movie according to the sl. no.");
         int comdy = Integer.parseInt(en.readLine());
-        double cmd = (int) (Math.random()*1000);
+        double cmd = (int) (Math.random()*500);
         System.out.println("Date and time: " + aa.getTime());
         System.out.println("                Book my Seat Streams");
         System.out.println("-------------------------------------------------------------");
         System.out.println("Comedy Show Name: " + Comedy[comdy-1]);
         System.out.println("Venue: " + venue[comdy-1]);
-        System.out.println("Cost: Rs." + costc$);
+        System.out.println("Cost: Rs." + cmd);
         System.out.println("                   PAYMENTS");
         System.out.println("***********************************************");
         System.out.println("Choose a payment option:");
@@ -1153,8 +1153,8 @@ public class book_my_seat
         System.out.println("Enter Password:");
         pass = en.readLine();
         System.out.println("Select the sports you want to watch");
-        int[] od = {1,2,3,4,5,6};
-        String[] Sports = {"E-Sports","Football","Cricket","Archery","Badminton","Basketball"};
+        int[] od = {1,2,3,4,5};
+        String[] Sports = {"E-Sports","Football","Cricket","Badminton","Basketball"};
         int sp;
         for(sp=0;sp< Sports.length;sp++){
             System.out.printf("%2s %2s%n", od[sp], Sports[sp]);
@@ -1270,7 +1270,7 @@ public class book_my_seat
                 System.out.println("Badminton");
                 int[] bd = {1, 2, 3, 4, 5, 6, 7};
                 System.out.println("Select the Badminton match you want to watch");
-                String[] Badminton = {"", "", "", "", "", "", "", ""};
+                String[] Badminton = {"India |vs| Japan", "Indonesia |vs| Denmark", "Malaysia |vs| Cannada", "China |vs| Singapore", "South korea |vs| Thailand", "Hong Kong |vs| Ierland", "Russia |vs| Uganda", "Bulgaria |vs| Wales"};
                 for (int es = 0; es < Badminton.length; es++) {
                     System.out.printf("%2s %2s%n", es + 1, Badminton[es]);
                 }
@@ -1482,7 +1482,180 @@ public class book_my_seat
                 throw new IllegalStateException("Unexpected value: " + pay);
         }
     }
-     public void Thanking (){
+    public void Plays () throws IOException {
+        Calendar aa = Calendar.getInstance();
+        System.out.println("\fDate and time: " + aa.getTime());
+        System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+        System.out.println(" ");
+        System.out.println("                            BBBBBB      OOOO      OOOO    KK  KK            MMM      MMM  YY    YY             SSSSSSS  EEEEEEEE      AA      TTTTTTTTTT   ");
+        System.out.println("                            BB   BB   OO    OO  OO    OO  KK KK             MM MM  MM MM   YY  YY             SS        EE           AA AA        TT       ");
+        System.out.println("                            BBBBBB    OO    OO  OO    OO  KKKK              MM  MM MM MM    YYYY               SSSSSSS  EEEEEEE     AA   AA       TT       ");
+        System.out.println("                            BB   BB   OO    OO  OO    OO  KK KK             MM    M   MM     YY                      SS EE         AAAAAAAAA      TT       ");
+        System.out.println("                            BBBBBB      OOOO      OOOO    KK  KK            MM        MM     YY                SSSSSSS  EEEEEEEE  AA       AA     TT       ");
+        System.out.println("                                                                                THINK IT SEE IT");
+        System.out.println("                                                                        FIND BEST PRICES ON MOVIE TICKETS");
+        System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+        String pass;
+        String user;
+        System.out.println("Enter Username");
+        user = en.readLine();
+        System.out.println("Enter Password:");
+        pass = en.readLine();
+        String[] Plays = {"Peppa pig", "Taking Sides", "The Bethany High Musical 2022 - The School of Rock", "4.48 Psychosis - a NOTE of Sarah Kane", "Mukhyamantri", "Doota Ghatotkacha", "Imagine a Room", "Rabbit Hole", "Dropathi Heltavle", "Maryade Prashne"};
+        String[] Venue= {"Dr B.R Ambedkar Bhavan: Bengaluru", "Ranga Shankara: Bengaluru", "st. Jhons Auditorium: Bengaluru", "Multiple Venues", "Ranga Shankara: Bengaluru", "Kalagrama Bengaluru University: Bengaluru", "Multiple Venues", "Alliance Franchise de: Bangaluru", "Ranga Shankara: Bengaluru", "Ranga Shankara: Bengaluru"};
+        int shows;
+        for (shows = 0; shows < Plays.length; shows++) {
+            System.out.printf("%2d. %1s%n", shows + 1,Plays[shows]);
+        }
+        System.out.println("Select the movie according to the sl. no.");
+        int plys = Integer.parseInt(en.readLine());
+        double ply = (int) (Math.random()*1000);
+        System.out.println("Date and time: " + aa.getTime());
+        System.out.println("                Book my Seat Streams");
+        System.out.println("-------------------------------------------------------------");
+        System.out.println("Comedy Show Name: " + Plays[plys-1]);
+        System.out.println("Venue: " + Venue[plys-1]);
+        System.out.println("Cost: Rs." + ply);
+        System.out.println("                   PAYMENTS");
+        System.out.println("***********************************************");
+        System.out.println("Choose a payment option:");
+        System.out.println("1.Debit/Credit Card");
+        System.out.println("2.Net-banking");
+        System.out.println("3.UPI");
+        System.out.println("4.Wallets");
+        pay = Integer.parseInt(en.readLine());
+        switch (pay) {
+            case 1:
+                long card;
+                int cvv;
+                int otp;
+                System.out.println("You have chosen payment through Debit/Credit card");
+                do {
+                    System.out.println("Please enter the 16 digits card number");
+                    card = Long.parseLong(en.readLine());
+                } while (1000000000000000L >= card || card >= 9999999999999999L);
+                do {
+                    System.out.println("Please enter the 3 digit cvv number");
+                    cvv = Integer.parseInt(en.readLine());
+                } while (100 >= cvv || cvv >= 999);
+                do {
+                    System.out.println("Please enter the 4 digit OTP which has been sent to your phone.");
+                    otp = Integer.parseInt(en.readLine());
+                } while (1000 >= otp || otp >= 9999);
+                System.out.println("Verifying>>>>>>>>>>>>>>>>>>>>");
+                System.out.println("Verified");
+                System.out.println(" ");
+                System.out.println("Payment through Card no. " + card);
+                System.out.println("You have successfully paid Rs." + ply + " through Credit/Debit Card");
+                int id = (int) Math.round(Math.random() * 1000);
+                int id1 = (int) Math.round(Math.random() * 100);
+                System.out.println("Payment reference no :CRD" + id + "DB" + id1 + "CD");
+                break;
+            case 2:
+                String users;
+                String passs;
+                System.out.println("You have chosen payment through Net Banking");
+                do {
+                    System.out.println("Please enter your username");
+                    user = en.readLine();
+                } while (user == null);
+                do {
+                    System.out.println("Please enter your password");
+                    pass = en.readLine();
+                } while (pass == null);
+                do {
+                    System.out.println("Please enter the 4 digit OTP which has been sent to your phone.");
+                    otp = Integer.parseInt(en.readLine());
+                } while (1000 >= otp || otp >= 9999);
+                System.out.println("Verifying>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+                System.out.println("Verified");
+                System.out.println(" ");
+                System.out.println("Payment through " + user);
+                System.out.println("You have successfully paid Rs." + ply + " through Net Banking");
+                int id2 = (int) Math.round(Math.random() * 1000);
+                int id3 = (int) Math.round(Math.random() * 100);
+                System.out.println("Payment reference no :NT" + id2 + "BNK" + id3 + "UP");
+                break;
+            case 3:
+                String upi;
+                long pin;
+                System.out.println("You have chosen payment through UPI\n");
+                do {
+                    System.out.println("Please enter your UPI ID\nYour UPI ID should be in the format of **********@upi\n");
+                    upi = en.readLine();
+                } while (upi == null);
+                do {
+                    System.out.println("Please enter your 6 digit UPI pin");
+                    pin = Long.parseLong(en.readLine());
+                } while (100000 >= pin || pin >= 999999);
+                System.out.println("Verifying>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+                System.out.println("Verified");
+                System.out.println(" ");
+                System.out.println("Payment through " + upi);
+                System.out.println("You have successfully paid Rs." + ply + " through UPI");
+                int id4 = (int) Math.round(Math.random() * 1000);
+                int id5 = (int) Math.round(Math.random() * 100);
+                System.out.println("Payment reference no :UPI" + id4 + "@" + id5 + "/y");
+                break;
+            case 4:
+                int wallet;
+                String Wallet;
+                long phone;
+                System.out.println("You have chosen payment through Digital Wallets.");
+                System.out.println("Choose the wallet of your choice.");
+                System.out.println(" ");
+                System.out.println("                    WALLETS");
+                System.out.println("**********************************************");
+                System.out.println("Choose a Digital Wallet:");
+                System.out.println("1.PhonePe");
+                System.out.println("2.G Pay(Google Pay)");
+                System.out.println("3.PayTM");
+                System.out.println("4.BharatPe");
+                System.out.println("5.Amazon Pay");
+                wallet = Integer.parseInt(en.readLine());
+                switch (wallet) {
+                    case 1:
+                        Wallet = "PhonePe";
+                        break;
+                    case 2:
+                        Wallet = "G Pay(Google Pay)";
+                        break;
+                    case 3:
+                        Wallet = "PayTM";
+                        break;
+                    case 4:
+                        Wallet = "BharatPe";
+                        break;
+                    case 5:
+                        Wallet = "Amazon Pay";
+                        break;
+                    default:
+                        throw new IllegalStateException("Unexpected value: " + wallet);
+                }
+                System.out.println("You have chosen " + Wallet + " Wallet");
+                System.out.println("Enter the phone number from which you have registered in " + Wallet);
+                do {
+                    System.out.println("Please enter your phone number");
+                    phone = Long.parseLong(en.readLine());
+                } while (1000000000 >= phone || phone >= 9999999999L);
+                do {
+                    System.out.println("Please enter the 4 digit OTP which has been sent to your phone.");
+                    otp = Integer.parseInt(en.readLine());
+                } while (1000 >= otp || otp >= 9999);
+                System.out.println("Verifying>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+                System.out.println("Verified");
+                System.out.println(" ");
+                System.out.println("Payment through " + Wallet);
+                System.out.println("You have successfully paid Rs." + ply + " through Digital Wallet");
+                int id6 = (int) Math.round(Math.random() * 1000);
+                int id7 = (int) Math.round(Math.random() * 100);
+                System.out.println("Payment reference no :DGT" + id6 + "WLT" + id7 + "Pec");
+                break;
+            default:
+                throw new IllegalStateException("Unexpected value: " + pay);
+        }
+    }
+    public void Thanking (){
         System.out.println("\f");
         System.out.println("            THANK YOU FOR BOOKING TICKETS ON BOOK MY SEAT               ");
         System.out.println("                          THINK IT SEE IT                               ");
@@ -1498,5 +1671,5 @@ public class book_my_seat
         System.out.println(" ");
          Calendar aa = Calendar.getInstance();
         System.out.println("Date and time:" + aa.getTime());
-     }
- }
+   }
+}
