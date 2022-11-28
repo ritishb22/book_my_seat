@@ -1,17 +1,16 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.time.LocalDate;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Random;
 import java.util.Scanner;
+import java.util.GregorianCalendar;
 
-@SuppressWarnings({" CStyleArrayDeclaration", "SwitchStatementWithTooFewBranches", "EnhancedSwitchMigration"})
 public class book_my_seat
 {
     static book_my_seat obj=new book_my_seat();
-
+    static GregorianCalendar date = new GregorianCalendar();
     BufferedReader en = new BufferedReader(new InputStreamReader(System.in));
     double total = 0, amt = 0, Amt = 0, gst, AMT = 0;
     int qty = 0, sna = 0, samt = 0, sqty = 0, stotal = 0, pay = 0;
@@ -41,7 +40,7 @@ public class book_my_seat
         do {
             BufferedReader kk = new BufferedReader(new InputStreamReader(System.in));
             System.out.println("Categories:");
-            String [] categories = {"Movies", "Stream", "Music Shows", "Comedy Shows", "Sports", "Plays", "Amusement Park", "Workshop", "Kid Zone", "Unique Tours", "Performance", "Gaming", "Laughter Therapy","Outdoor Events" ,"Explore More."};
+            String [] categories = {"Movies", "Stream", "Music Shows", "Comedy Shows", "Sports", "Plays"};
             for (int cat = 0; cat < categories.length; cat++){
                 System.out.printf("%2d %2s%n", cat+1, categories[cat]);
             }
@@ -57,6 +56,8 @@ public class book_my_seat
                 obj.Comedy_Shows();
             if(ct == 5)
                 obj.Sports();
+            if(ct == 6)
+                obj.Plays();
             T+=1;
             System.out.println("do you want to book again ? (yes/no)");
             again = kk.readLine();
@@ -110,7 +111,6 @@ public class book_my_seat
                 throw new IllegalStateException("Unexpected value: " + l);
         }
         obj.City();
-        obj.Date$Time();
         obj.Tre$Snacks();
         obj.Billing();
         obj.Payments();
@@ -191,28 +191,6 @@ public class book_my_seat
             case 20:
                 Theaters = Visakhapatnam_Theaters;
         }
-    }
-    public void Date$Time () throws IOException {
-        LocalDate today = LocalDate.now();
-        System.out.println("\nSelect Date:");
-        for (int dt = 1; dt <= 10; dt++){
-            System.out.println(dt+ ". " +today.plusDays(dt));
-        }
-        int dte = Integer.parseInt(en.readLine());
-        LocalDate Date = today.plusDays(dte);
-        System.out.println("\nSelect Time on Date:\n1. 5 AM - 8 AM\n2. 9 AM - 12 PM\n3. 1 PM - 4 PM\n4.5 PM- 8 PM\n5. 9 PM - 12 AM");
-        int time = Integer.parseInt(en.readLine());
-        String tme;
-        if(time == 1)
-            tme = "5 AM - 8 AM";
-        if(time == 2)
-            tme = "9 AM - 12 PM";
-        if(time == 3)
-            tme = "1 PM - 4 PM";
-        if(time == 4)
-            tme = "5 PM- 8 PM";
-        if(time == 5)
-            tme = "9 PM - 12 AM";
     }
     public void English ()throws IOException {
         do {
@@ -980,9 +958,9 @@ public class book_my_seat
         user = en.readLine();
         System.out.println("Enter Password:");
         pass = en.readLine();
-        String[] Comedy = {"", "", "", "", "", "","", "", "", ""};
-        String[] venue = {"Phoenix Marketcity, Whitefield", "GYLT:Bengaluru", "GYLT:Bengaluru", "Chowdiyah Memorial Hall", "Nimhans Convention Center", "Sutra: The Lalit Ashok","Tribal Adventure Cafe, Bengaluru", "Bhartiya Mall, Bengaluru", "Sutra: The Lalit Ashok", "Hard Rock Cafe, Bengaluru"};
-        int[] costc$ = {199, 260, 149, 209, 179, 139, 150, 190, 200, 140};
+        String[] Comedy = {"Open Mics by Morph._Code hosted by Shankar Chugani", "Oh Hello! By Rahul Dua - INDIA TOUR", "Pannu Yaar! ft.Gurleen Pannu", "SUNDAY MORNINGS STAND UP COMEDY AT CUBBON PARK", "Gaurav Gupta Live - Stand Up comedy Show", "Naveen Richard Live Tour","The IMPROV Live in Bangalore!", "Stand Up Comedy Live", "Kannada Stand Up Comedy", "Saikiran LIVE"};
+        String[] venue = {"21st Amendment Gastrobar: Indiranagar, Whitefield", "St. John's Auditorium: Bengaluru", "Just BLR: Bengaluru", "Outside Karnataka High Court: Bengaluru", "BOHO Rooftop Restaurant and Bar: Bengaluru", "Mother Tekla Auditorium: Bengaluru","Mother Tekla Auditorium: Bengaluru", "Bistro Claytopia : Koramangala", "Artkhoj - JP Nagar: Bengaluru", "Artkhoj - JP Nagar: Bengaluru"};
+        int[] costc$ = {99, 499, 499, 10, 499, 499, 999, 149, 199, 499};
         int shows;
         for (shows = 0; shows < Comedy.length; shows++) {
             System.out.printf("%2d. %1s%n", shows + 1,Comedy[shows]);
@@ -1535,8 +1513,184 @@ public class book_my_seat
         }
         obj.Thanking();
     }
-     public void Thanking (){
-        System.out.println("\f");
+    public void Plays () throws IOException{
+        Calendar aa = Calendar.getInstance();
+        System.out.println("\fDate and time: " + aa.getTime());
+        System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+        System.out.println(" ");
+        System.out.println("                            BBBBBB      OOOO      OOOO    KK  KK            MMM      MMM  YY    YY             SSSSSSS  EEEEEEEE      AA      TTTTTTTTTT   ");
+        System.out.println("                            BB   BB   OO    OO  OO    OO  KK KK             MM MM  MM MM   YY  YY             SS        EE           AA AA        TT       ");
+        System.out.println("                            BBBBBB    OO    OO  OO    OO  KKKK              MM  MM MM MM    YYYY               SSSSSSS  EEEEEEE     AA   AA       TT       ");
+        System.out.println("                            BB   BB   OO    OO  OO    OO  KK KK             MM    M   MM     YY                      SS EE         AAAAAAAAA      TT       ");
+        System.out.println("                            BBBBBB      OOOO      OOOO    KK  KK            MM        MM     YY                SSSSSSS  EEEEEEEE  AA       AA     TT       ");
+        System.out.println("                                                                                THINK IT SEE IT");
+        System.out.println("                                                                        FIND BEST PRICES ON MOVIE TICKETS");
+        System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+        String pass;
+        String user;
+        System.out.println("Enter Username");
+        user = en.readLine();
+        System.out.println("Enter Password:");
+        pass = en.readLine();
+        String[] Plays = {"18 Days (Kurukshetra War) - Dance Musical", "The Bethany High Musical 2022 - The School of Rock", "Dance Like A Man - Bengaluru", "Vodka and No Tonic", "Charandas Chor", "4.48 Psychosis - a NOTE of Sarah Kane", "Kabuliwala Calling", "Chora Puraana", "The Nights", "Old Man and The Sea"};
+        String[] venue = {"Ravindra Kalakshetra: Bengaluru", "St. Johns Auditorium: Bengaluru", "Ranga Shankara: Bengaluru", "Ranga Shankara: Bengaluru", "Jagriti Theatre: Whitefield, Bengaluru", "Ranga Shankara: Bengaluru", "Alliance Francaise de: Bangalore", "ADA Ranga Mandira: Bengaluru", "Ranga Shankara: Bengaluru", "Jagriti Theatre: Whitefield, Bengaluru"};
+        int[] costc$ = {399, 550, 550, 500, 400, 300, 250, 150, 300, 300};
+        int shows;
+        for (shows = 0; shows < Plays.length; shows++) {
+            System.out.printf("%2d. %1s%n", shows + 1,Plays[shows]);
+        }
+        System.out.println("Select the movie according to the sl. no.");
+        int play = Integer.parseInt(en.readLine());
+        double cmd = (int) (Math.random()*1000);
+        System.out.println("Date and time: " + aa.getTime());
+        System.out.println("                Book my Seat Streams");
+        System.out.println("-------------------------------------------------------------");
+        System.out.println("Comedy Show Name: " + Plays [play-1]);
+        System.out.println("Venue: " + venue [play-1]);
+        System.out.println("Cost: Rs." + costc$ [play-1]);
+        System.out.println(" ");
+        System.out.println("                   PAYMENTS");
+        System.out.println("***********************************************");
+        System.out.println("Choose a payment option:");
+        System.out.println("1.Debit/Credit Card");
+        System.out.println("2.Net-banking");
+        System.out.println("3.UPI");
+        System.out.println("4.Wallets");
+        pay = Integer.parseInt(en.readLine());
+        switch (pay) {
+            case 1:
+                long card;
+                int cvv;
+                int otp;
+                System.out.println("You have chosen payment through Debit/Credit card");
+                do {
+                    System.out.println("Please enter the 16 digits card number");
+                    card = Long.parseLong(en.readLine());
+                } while (1000000000000000L >= card || card >= 9999999999999999L);
+                do {
+                    System.out.println("Please enter the 3 digit cvv number");
+                    cvv = Integer.parseInt(en.readLine());
+                } while (100 >= cvv || cvv >= 999);
+                do {
+                    System.out.println("Please enter the 4 digit OTP which has been sent to your phone.");
+                    otp = Integer.parseInt(en.readLine());
+                } while (1000 >= otp || otp >= 9999);
+                System.out.println("Verifying>>>>>>>>>>>>>>>>>>>>");
+                System.out.println("Verified");
+                System.out.println(" ");
+                System.out.println("Payment through Card no. " + card);
+                System.out.println("You have successfully paid Rs." + costc$ [play-1] + " through Credit/Debit Card");
+                int id = (int) Math.round(Math.random() * 1000);
+                int id1 = (int) Math.round(Math.random() * 100);
+                System.out.println("Payment reference no :CRD" + id + "DB" + id1 + "CD");
+                break;
+            case 2:
+                String users;
+                String passs;
+                System.out.println("You have chosen payment through Net Banking");
+                do {
+                    System.out.println("Please enter your username");
+                    user = en.readLine();
+                } while (user == null);
+                do {
+                    System.out.println("Please enter your password");
+                    pass = en.readLine();
+                } while (pass == null);
+                do {
+                    System.out.println("Please enter the 4 digit OTP which has been sent to your phone.");
+                    otp = Integer.parseInt(en.readLine());
+                } while (1000 >= otp || otp >= 9999);
+                System.out.println("Verifying>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+                System.out.println("Verified");
+                System.out.println(" ");
+                System.out.println("Payment through " + user);
+                System.out.println("You have successfully paid Rs." + costc$ [play-1] + " through Net Banking");
+                int id2 = (int) Math.round(Math.random() * 1000);
+                int id3 = (int) Math.round(Math.random() * 100);
+                System.out.println("Payment reference no :NT" + id2 + "BNK" + id3 + "UP");
+                break;
+            case 3:
+                String upi;
+                long pin;
+                System.out.println("You have chosen payment through UPI\n");
+                do {
+                    System.out.println("Please enter your UPI ID\nYour UPI ID should be in the format of **********@upi\n");
+                    upi = en.readLine();
+                } while (upi == null);
+                do {
+                    System.out.println("Please enter your 6 digit UPI pin");
+                    pin = Long.parseLong(en.readLine());
+                } while (100000 >= pin || pin >= 999999);
+                System.out.println("Verifying>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+                System.out.println("Verified");
+                System.out.println(" ");
+                System.out.println("Payment through " + upi);
+                System.out.println("You have successfully paid Rs." + costc$ [play-1] + " through UPI");
+                int id4 = (int) Math.round(Math.random() * 1000);
+                int id5 = (int) Math.round(Math.random() * 100);
+                System.out.println("Payment reference no :UPI" + id4 + "@" + id5 + "/y");
+                break;
+            case 4:
+                int wallet;
+                String Wallet;
+                long phone;
+                System.out.println("You have chosen payment through Digital Wallets.");
+                System.out.println("Choose the wallet of your choice.");
+                System.out.println(" ");
+                System.out.println("                    WALLETS");
+                System.out.println("**********************************************");
+                System.out.println("Choose a Digital Wallet:");
+                System.out.println("1.PhonePe");
+                System.out.println("2.G Pay(Google Pay)");
+                System.out.println("3.PayTM");
+                System.out.println("4.BharatPe");
+                System.out.println("5.Amazon Pay");
+                wallet = Integer.parseInt(en.readLine());
+                switch (wallet) {
+                    case 1:
+                        Wallet = "PhonePe";
+                        break;
+                    case 2:
+                        Wallet = "G Pay(Google Pay)";
+                        break;
+                    case 3:
+                        Wallet = "PayTM";
+                        break;
+                    case 4:
+                        Wallet = "BharatPe";
+                        break;
+                    case 5:
+                        Wallet = "Amazon Pay";
+                        break;
+                    default:
+                        throw new IllegalStateException("Unexpected value: " + wallet);
+                }
+                System.out.println("You have chosen " + Wallet + " Wallet");
+                System.out.println("Enter the phone number from which you have registered in " + Wallet);
+                do {
+                    System.out.println("Please enter your phone number");
+                    phone = Long.parseLong(en.readLine());
+                } while (1000000000 >= phone || phone >= 9999999999L);
+                do {
+                    System.out.println("Please enter the 4 digit OTP which has been sent to your phone.");
+                    otp = Integer.parseInt(en.readLine());
+                } while (1000 >= otp || otp >= 9999);
+                System.out.println("Verifying>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+                System.out.println("Verified");
+                System.out.println(" ");
+                System.out.println("Payment through " + Wallet);
+                System.out.println("You have successfully paid Rs." + costc$ [play-1] + " through Digital Wallet");
+                int id6 = (int) Math.round(Math.random() * 1000);
+                int id7 = (int) Math.round(Math.random() * 100);
+                System.out.println("Payment reference no :DGT" + id6 + "WLT" + id7 + "Pec");
+                break;
+            default:
+                throw new IllegalStateException("Unexpected value: " + pay);
+        }
+        obj.Thanking();
+    }
+    public void Thanking (){
+        System.out.println(" ");
         System.out.println("            THANK YOU FOR BOOKING TICKETS ON BOOK MY SEAT               ");
         System.out.println("                          THINK IT SEE IT                               ");
         System.out.println("                  FIND BEST PRICES ON MOVIE TICKETS                      ");
